@@ -1,3 +1,5 @@
+[![GitHub WidgetBox](https://github-widgetbox.vercel.app/api/profile?username=CS-LX&data=followers,repositories)](https://github.com/Jurredr/github-widgetbox)
+
 ##### 访问量：
 ![Visitor Count](https://profile-counter.glitch.me/Christmas/count.svg)
 ##### 最爱语言：
