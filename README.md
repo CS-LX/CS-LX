@@ -23,7 +23,7 @@ ___
 ____
 #### 🔧 Tech Stack & CURRENT TOOLS
 
-[![My Tech Stack](https://mobaicons.com/icons/c,cpp,csharp,python)](https://github.com/Artist-MOBAI/MOBAIcons)
+[![My Tech Stack](https://mobaicons.com/icons/c,cpp,csharp,python,lua)](https://github.com/Artist-MOBAI/MOBAIcons)
 
 [![My URRENT TOOLS](https://mobaicons.com/icons/visual-studio,unity,github,git,rider,stack-overflow,blender)](https://github.com/Artist-MOBAI/MOBAIcons)
 
