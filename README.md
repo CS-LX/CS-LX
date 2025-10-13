@@ -21,11 +21,11 @@ ___
 [![QQ](https://img.shields.io/static/v1?style=for-the-badge&label=QQ&message=1659404657&color=353940&labelColor=1793D1&logo=maildotru)](mailto:1659404657@qq.com)
 
 ____
-#### 🔧 Tech Stack & CURRENT TOOLS
+#### 🔧 Tech Stack & CURRENT TOOLS & PLATFORMS
 
 [![My Tech Stack](https://mobaicons.com/icons/c,cpp,csharp,python,lua)](https://github.com/Artist-MOBAI/MOBAIcons)
 
-[![My URRENT TOOLS](https://mobaicons.com/icons/visual-studio,unity,github,git,rider,stack-overflow,blender)](https://github.com/Artist-MOBAI/MOBAIcons)
+[![My URRENT TOOLS](https://mobaicons.com/icons/visual-studio,unity,github,git,rider,blender)](https://github.com/Artist-MOBAI/MOBAIcons)
 
 
-
+[![My URRENT TOOLS](https://mobaicons.com/icons/stack-overflow,steam)](https://github.com/Artist-MOBAI/MOBAIcons)
