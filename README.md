@@ -32,4 +32,41 @@ ____
 
 ____
 #### 🎮 Releasing Games
-[![有病才能当牛马](https://img.shields.io/badge/有病才能当牛马-TapTap页面-F3CD00?style=for-the-badge&logo=https://raw.githubusercontent.com/CS-LX/CS-LX/main/Images/NullKitchenException.png&logoWidth=28)](https://www.taptap.cn/app/779871)
+<p align="left" style="display: flex; align-items: center; gap: 10px;">
+  <a href="https://www.taptap.cn/app/779871" target="_blank" rel="noopener noreferrer">
+    <img src="https://raw.githubusercontent.com/CS-LX/CS-LX/main/Images/NullKitchenException.png" 
+         alt="有病才能当牛马" width="60" height="60" style="border-radius: 8px;"/>
+  </a>
+  <span style="display: flex; flex-direction: column; gap: 6px;">
+    <a href="https://www.taptap.cn/app/779871"
+       target="_blank"
+       style="
+        text-decoration:none;
+        background:#24DBB6;
+        color:black;
+        padding:6px 12px;
+        border-radius:6px;
+        font-weight:600;
+        font-size:14px;
+        display:inline-block;
+        text-align:center;
+        width:88px;">
+      Tap Tap
+    </a>
+    <a href="https://store.steampowered.com/app/4143170"
+       target="_blank"
+       style="
+        text-decoration:none;
+        background:#1b2838;
+        color:white;
+        padding:6px 12px;
+        border-radius:6px;
+        font-weight:600;
+        font-size:14px;
+        display:inline-block;
+        text-align:center;
+        width:88px;">
+      Steam
+    </a>
+  </span>
+</p>
