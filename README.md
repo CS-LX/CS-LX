@@ -29,3 +29,7 @@ ____
 
 
 [![My URRENT TOOLS](https://mobaicons.com/icons/stack-overflow,steam)](https://github.com/Artist-MOBAI/MOBAIcons)
+
+____
+#### 🎮 Releasing Games
+[![有病才能当牛马](https://img.shields.io/badge/有病才能当牛马-TapTap页面-F3CD00?style=for-the-badge&logo=https://raw.githubusercontent.com/CS-LX/CS-LX/main/Images/NullKitchenException.png&logoWidth=28)](https://www.taptap.cn/app/779871)
