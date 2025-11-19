@@ -52,3 +52,19 @@ ____
     </td>
   </tr>
 </table>
+<table>
+  <tr>
+    <td valign="middle">
+      <a href="https://www.taptap.cn/app/789796" target="_blank">
+        <img src="https://raw.githubusercontent.com/CS-LX/CS-LX/main/Images/Darkrune.png" 
+             alt="本关考验你听声辩位功夫" width="64" height="64" style="border-radius:10px;">
+      </a>
+    </td>
+    <td valign="middle">
+      <a href="https://www.taptap.cn/app/789796" target="_blank" 
+         style="background:#24DBB6;color:#000;padding:6px 12px;border-radius:6px;font-weight:600;font-size:14px;text-decoration:none;display:inline-block;margin-bottom:6px;">
+        Tap Tap
+      </a><br>
+    </td>
+  </tr>
+</table>
