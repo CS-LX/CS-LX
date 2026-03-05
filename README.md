@@ -52,6 +52,7 @@ ____
     </td>
   </tr>
 </table>
+
 <table>
   <tr>
     <td valign="middle">
@@ -62,6 +63,57 @@ ____
     </td>
     <td valign="middle">
       <a href="https://www.taptap.cn/app/789796" target="_blank" 
+         style="background:#24DBB6;color:#000;padding:6px 12px;border-radius:6px;font-weight:600;font-size:14px;text-decoration:none;display:inline-block;margin-bottom:6px;">
+        Tap Tap
+      </a><br>
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td valign="middle">
+      <a href="https://www.taptap.cn/app/793993" target="_blank">
+        <img src="https://raw.githubusercontent.com/CS-LX/CS-LX/main/Images/Shadown.png" 
+             alt="影射-Shadown" width="64" height="64" style="border-radius:10px;">
+      </a>
+    </td>
+    <td valign="middle">
+      <a href="https://www.taptap.cn/app/793993" target="_blank" 
+         style="background:#24DBB6;color:#000;padding:6px 12px;border-radius:6px;font-weight:600;font-size:14px;text-decoration:none;display:inline-block;margin-bottom:6px;">
+        Tap Tap
+      </a><br>
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td valign="middle">
+      <a href="https://www.taptap.cn/app/800774" target="_blank">
+        <img src="https://raw.githubusercontent.com/CS-LX/CS-LX/main/Images/NeoFolder.png" 
+             alt="新建文件夹" width="64" height="64" style="border-radius:10px;">
+      </a>
+    </td>
+    <td valign="middle">
+      <a href="https://www.taptap.cn/app/800774" target="_blank" 
+         style="background:#24DBB6;color:#000;padding:6px 12px;border-radius:6px;font-weight:600;font-size:14px;text-decoration:none;display:inline-block;margin-bottom:6px;">
+        Tap Tap
+      </a><br>
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td valign="middle">
+      <a href="https://www.taptap.cn/app/814328" target="_blank">
+        <img src="https://raw.githubusercontent.com/CS-LX/CS-LX/main/Images/StencilMask.png" 
+             alt="StencilMask" width="64" height="64" style="border-radius:10px;">
+      </a>
+    </td>
+    <td valign="middle">
+      <a href="https://www.taptap.cn/app/814328" target="_blank" 
          style="background:#24DBB6;color:#000;padding:6px 12px;border-radius:6px;font-weight:600;font-size:14px;text-decoration:none;display:inline-block;margin-bottom:6px;">
         Tap Tap
       </a><br>
