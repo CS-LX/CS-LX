@@ -96,6 +96,7 @@ ____
       <td>独立开发项目<br><i>Solo Project</i></td>
       <td>
         <a href="https://www.taptap.cn/app/793993" target="_blank" style="background:#24DBB6;color:#000;padding:4px 8px;border-radius:4px;font-size:12px;text-decoration:none;">TapTap</a>
+        <a href="https://store.steampowered.com/app/4499100/" target="_blank" style="background:#1b2838;color:#fff;padding:4px 8px;border-radius:4px;font-size:12px;text-decoration:none;">Steam</a>
       </td>
     </tr>
   </tbody>
