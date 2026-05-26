@@ -9,11 +9,6 @@ th vistor!
 </p>
 
 ___
-#### ✅ About ME
-![](https://github-readme-stats.vercel.app/api?username=cs-lx&show_icons=true&count_private=true)
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=CS-LX&layout=compact&hide_title=true&card_width=445)](https://github.com/CS-LX)
-
-___
 #### 👁️‍🗨️ Find ME
 
 [![Bilibili](https://img.shields.io/badge/dynamic/json?style=for-the-badge&label=Bilibili+Fans&labelColor=FE7398&color=282c34&query=$.data.follower&url=https://api.bilibili.com/x/relation/stat?vmid=312642275&longCache=true&logo=bilibili&logoColor=white)](https://space.bilibili.com/312642275)
@@ -26,7 +21,6 @@ ____
 [![My Tech Stack](https://mobaicons.com/icons/c,cpp,csharp,python,lua)](https://github.com/Artist-MOBAI/MOBAIcons)
 
 [![My URRENT TOOLS](https://mobaicons.com/icons/visual-studio,unity,github,git,rider,blender)](https://github.com/Artist-MOBAI/MOBAIcons)
-
 
 [![My URRENT TOOLS](https://mobaicons.com/icons/stack-overflow,steam)](https://github.com/Artist-MOBAI/MOBAIcons)
 
