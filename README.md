@@ -18,6 +18,7 @@ ___
 ____
 #### 🔧 Tech Stack & CURRENT TOOLS & PLATFORMS
 
+This is legacy, and 404, place switch a newer
 [![My Tech Stack](https://mobaicons.com/icons/c,cpp,csharp,python,lua)](https://github.com/Artist-MOBAI/MOBAIcons)
 
 [![My URRENT TOOLS](https://mobaicons.com/icons/visual-studio,unity,github,git,rider,blender)](https://github.com/Artist-MOBAI/MOBAIcons)
