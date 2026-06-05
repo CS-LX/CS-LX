@@ -1,32 +1,100 @@
-[![GitHub WidgetBox](https://github-widgetbox.vercel.app/api/profile?username=CS-LX&data=followers,repositories)](https://github.com/Jurredr/github-widgetbox)
+<div align="center">
 
-### 👋 Hi There! This is 钅离-LX.
+<!-- 打字机动画标题 -->
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&multiline=true&repeat=false&width=600&height=120&lines=%E9%92%85%E7%A6%BB-LX;Game+Developer+%7C+Modder;Learning+C%2B%2B%2B%2B;Welcome+to+my+GitHub!" alt="Typing SVG" />
 
-<p align="center">
-Welcome, the
-<a href="https://github.com/CS-LX" target="_blank"><img src="https://count.getloli.com/get/@CS-LX?theme=rule34" alt="Visitor Counter"></a>
-th vistor!
-</p>
+<!-- 个人简介徽章 -->
+[![Profile Views](https://komarev.com/ghpvc/?username=CS-LX&color=58a6ff&style=for-the-badge&label=PROFILE+VIEWS)](https://github.com/CS-LX)
+[![GitHub User](https://img.shields.io/badge/CS--LX-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/CS-LX)
+[![Company](https://img.shields.io/badge/天津科技大学-0052CC?style=for-the-badge&logo=google-scholar&logoColor=white)](https://github.com/CS-LX)
+[![Repos](https://img.shields.io/badge/dynamic/json?style=for-the-badge&label=Public+Repos&query=%24.public_repos&url=https%3A%2F%2Fapi.github.com%2Fusers%2FCS-LX&color=21262d&labelColor=30363d)](https://github.com/CS-LX?tab=repositories)
 
-___
-#### 👁️‍🗨️ Find ME
+<br/>
 
+<!-- 社交链接 -->
 [![Bilibili](https://img.shields.io/badge/dynamic/json?style=for-the-badge&label=Bilibili+Fans&labelColor=FE7398&color=282c34&query=$.data.follower&url=https://api.bilibili.com/x/relation/stat?vmid=312642275&longCache=true&logo=bilibili&logoColor=white)](https://space.bilibili.com/312642275)
-[![Github](https://img.shields.io/badge/dynamic/json?style=for-the-badge&label=GitHub+Followers&suffix=%20&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dgithub%26queryKey%3DCS-LX&labelColor=282c34&color=353940&logo=github&longCache=true)](https://github.com/CS-LX)
+[![GitHub Followers](https://img.shields.io/badge/dynamic/json?style=for-the-badge&label=GitHub+Followers&suffix=%20&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dgithub%26queryKey%3DCS-LX&labelColor=282c34&color=353940&logo=github&longCache=true)](https://github.com/CS-LX)
 [![QQ](https://img.shields.io/static/v1?style=for-the-badge&label=QQ&message=1659404657&color=353940&labelColor=1793D1&logo=maildotru)](mailto:1659404657@qq.com)
+[![Steam](https://img.shields.io/badge/Steam-000000?style=for-the-badge&logo=steam&logoColor=white)](https://store.steampowered.com/app/4143170)
+[![TapTap](https://img.shields.io/badge/TapTap-24DBB6?style=for-the-badge&logo=taptap&logoColor=black)](https://www.taptap.cn/developer/779871)
 
-____
-#### 🔧 Tech Stack & CURRENT TOOLS & PLATFORMS
+</div>
 
-This is legacy, and 404, place switch a newer
-[![My Tech Stack](https://mobaicons.com/icons/c,cpp,csharp,python,lua)](https://github.com/Artist-MOBAI/MOBAIcons)
+---
 
-[![My URRENT TOOLS](https://mobaicons.com/icons/visual-studio,unity,github,git,rider,blender)](https://github.com/Artist-MOBAI/MOBAIcons)
+## 👋 关于我
 
-[![My URRENT TOOLS](https://mobaicons.com/icons/stack-overflow,steam)](https://github.com/Artist-MOBAI/MOBAIcons)
+```text
+🎓 天津科技大学 · 独立游戏开发者 & 模组作者
+💻 主攻 C# / C++ / Lua · Unity 游戏开发
+🎮 Survivalcraft 生态 · 工业模组 · 配方系统
+🛠️  也在折腾 WinForms / Blender / 数字逻辑
+```
 
-____
-#### 🎮 Releasing Games
+> *Learning C++++* — 持续探索系统底层与游戏机制的实现方式。
+
+---
+
+## 📊 GitHub 数据
+
+<!-- 统计卡片：统一深色主题 -->
+<table>
+  <tr>
+    <td valign="top" width="50%">
+      <img src="https://github-readme-stats.vercel.app/api?username=CS-LX&show_icons=true&count_private=true&include_all_commits=true&theme=dark&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=c9d1d9&border_color=30363d&hide_border=false" alt="GitHub Stats"/>
+    </td>
+    <td valign="top" width="50%">
+      <img src="https://github-readme-streak-stats.herokuapp.com/?user=CS-LX&theme=dark&background=0d1117&border=30363d&stroke=30363d&ring=58a6ff&fire=58a6ff&currStreakLabel=58a6ff&sideLabels=c9d1d9&dates=8b949e" alt="GitHub Streak"/>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" width="50%">
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=CS-LX&layout=compact&langs_count=8&theme=dark&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&border_color=30363d&hide_border=false" alt="Top Languages"/>
+    </td>
+    <td valign="top" width="50%">
+      <img src="https://github-profile-trophy.vercel.app/?username=CS-LX&theme=discord&no-frame=true&no-bg=true&margin-w=4&column=2" alt="GitHub Trophy"/>
+    </td>
+  </tr>
+</table>
+
+<!-- 贡献活动图 -->
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=CS-LX&theme=react-dark&hide_border=true&area=true&bg_color=0d1117&color=58a6ff&line=58a6ff&point=c9d1d9&area_color=1f6feb" alt="Activity Graph"/>
+
+---
+
+## ⭐ 精选项目
+
+<table>
+  <tr>
+    <td width="50%">
+      <a href="https://github.com/CS-LX/PowerfulWindSlickedBackHair_Winform">
+        <img src="https://github-readme-stats.vercel.app/api/pin/?username=CS-LX&repo=PowerfulWindSlickedBackHair_Winform&theme=dark&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=c9d1d9&border_color=30363d&hide_border=false" alt="PowerfulWindSlickedBackHair_Winform"/>
+      </a>
+    </td>
+    <td width="50%">
+      <a href="https://github.com/CS-LX/Inhuman">
+        <img src="https://github-readme-stats.vercel.app/api/pin/?username=CS-LX&repo=Inhuman&theme=dark&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=c9d1d9&border_color=30363d&hide_border=false" alt="Inhuman"/>
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <a href="https://github.com/CS-LX/RecipaediaEX">
+        <img src="https://github-readme-stats.vercel.app/api/pin/?username=CS-LX&repo=RecipaediaEX&theme=dark&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=c9d1d9&border_color=30363d&hide_border=false" alt="RecipaediaEX"/>
+      </a>
+    </td>
+    <td width="50%">
+      <a href="https://github.com/CS-LX/SCEngine">
+        <img src="https://github-readme-stats.vercel.app/api/pin/?username=CS-LX&repo=SCEngine&theme=dark&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=c9d1d9&border_color=30363d&hide_border=false" alt="SCEngine"/>
+      </a>
+    </td>
+  </tr>
+</table>
+
+---
+
+## 🎮 已发布游戏
+
 <table width="100%">
   <thead>
     <tr align="left">
@@ -43,7 +111,7 @@ ____
         <strong> StencilMask</strong>
       </td>
       <td>程序<br><i>Programmer</i></td>
-      <td><strong>Global GameJam 2026</strong><br> 中国区 - 北京AF场 <b>最佳美术奖</b><br><i>[GGJ 2026]Best Art Award - Beijing AF Site</i></td>
+      <td><strong>Global GameJam 2026</strong><br> 中国区 - 北京AF场 <b>最佳美术奖</b><br><i>[GGJ 2026] Best Art Award - Beijing AF Site</i></td>
       <td>
         <a href="https://www.taptap.cn/app/814328" target="_blank" style="background:#24DBB6;color:#000;padding:4px 8px;border-radius:4px;font-size:12px;text-decoration:none;">TapTap</a>
       </td>
@@ -96,3 +164,47 @@ ____
     </tr>
   </tbody>
 </table>
+
+---
+
+## 🔧 技术栈
+
+<div align="center">
+
+**语言**
+
+<img src="https://skillicons.dev/icons?i=cs,cpp,c,python,lua&theme=dark&perline=8" alt="Languages"/>
+
+**工具 & 平台**
+
+<img src="https://skillicons.dev/icons?i=unity,git,github,blender,visualstudio,rider,stackoverflow,steam&theme=dark&perline=8" alt="Tools"/>
+
+</div>
+
+---
+
+## 🐍 贡献贪吃蛇
+
+<!-- 需要 Actions 工作流生成 snake 动画，见 .github/workflows/snake.yml -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/output/github-contribution-grid-snake.svg">
+  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/CS-LX/CS-LX/output/github-contribution-grid-snake-dark.svg">
+</picture>
+
+---
+
+<div align="center">
+
+<sub>Built with ❤️ using</sub>
+<br/>
+<a href="https://github.com/anuraghazra/github-readme-stats">github-readme-stats</a> ·
+<a href="https://github.com/DenverCoder1/github-readme-streak-stats">streak-stats</a> ·
+<a href="https://github.com/Ashutosh00710/github-readme-activity-graph">activity-graph</a> ·
+<a href="https://github.com/ryo-ma/github-profile-trophy">profile-trophy</a> ·
+<a href="https://github.com/tandpfun/skill-icons">skill-icons</a>
+
+<br/><br/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,100:1f6feb&height=100&section=footer&text=Thanks%20for%20visiting!&fontSize=24&fontColor=c9d1d9&animation=twinkling"/>
+
+</div>
