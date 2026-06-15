@@ -177,7 +177,7 @@
 
 **工具 & 平台**
 
-<img src="https://skillicons.dev/icons?i=unity,git,github,blender,visualstudio,rider,stackoverflow,steam,linear,figma&theme=dark&perline=8" alt="Tools"/>
+<img src="https://skillicons.dev/icons?i=unity,git,github,blender,visualstudio,rider,stackoverflow,figma,ps,sentry&theme=dark&perline=8" alt="Tools"/>
 
 </div>
 
