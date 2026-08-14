@@ -13,7 +13,7 @@
 
 <!-- 社交链接 -->
 [![Bilibili](https://img.shields.io/badge/dynamic/json?style=for-the-badge&label=Bilibili+Fans&labelColor=FE7398&color=282c34&query=$.data.follower&url=https://api.bilibili.com/x/relation/stat?vmid=312642275&longCache=true&logo=bilibili&logoColor=white)](https://space.bilibili.com/312642275)
-[![GitHub Followers](https://img.shields.io/badge/dynamic/json?style=for-the-badge&label=GitHub+Followers&suffix=%20&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dgithub%26queryKey%3DCS-LX&labelColor=282c34&color=353940&logo=github&longCache=true)](https://github.com/CS-LX)
+[![GitHub Followers](https://img.shields.io/github/followers/CS-LX?style=for-the-badge&logo=github&label=GitHub%20Followers&color=353940&labelColor=282c34)](https://github.com/CS-LX)
 [![QQ](https://img.shields.io/static/v1?style=for-the-badge&label=QQ&message=1659404657&color=353940&labelColor=1793D1&logo=maildotru)](mailto:1659404657@qq.com)
 [![Steam](https://img.shields.io/badge/Steam-000000?style=for-the-badge&logo=steam&logoColor=white)](https://steamcommunity.com/profiles/76561199222124610/)
 [![TapTap](https://img.shields.io/badge/TapTap-24DBB6?style=for-the-badge&logo=taptap&logoColor=black)](https://www.taptap.cn/user/570079718)
@@ -41,7 +41,7 @@
 <table>
   <tr>
     <td valign="top" width="50%">
-      <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=CS-LX&show_icons=true&count_private=true&include_all_commits=true&theme=dark&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=c9d1d9&border_color=30363d&hide_border=false" alt="GitHub Stats"/>
+      <img src="https://github-readme-stats-phi.vercel.app/api?username=CS-LX&show_icons=true&count_private=true&include_all_commits=true&theme=dark&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=c9d1d9&border_color=30363d&hide_border=false" alt="GitHub Stats"/>
     </td>
     <td valign="top" width="50%">
       <img src="https://github-readme-streak-stats.herokuapp.com/?user=CS-LX&theme=dark&background=0d1117&border=30363d&stroke=30363d&ring=58a6ff&fire=58a6ff&currStreakLabel=58a6ff&sideLabels=c9d1d9&dates=8b949e" alt="GitHub Streak"/>
@@ -49,7 +49,7 @@
   </tr>
   <tr>
     <td valign="top" width="50%">
-      <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=CS-LX&layout=compact&langs_count=8&theme=dark&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&border_color=30363d&hide_border=false" alt="Top Languages"/>
+      <img src="https://github-readme-stats-phi.vercel.app/api/top-langs/?username=CS-LX&layout=compact&langs_count=8&theme=dark&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&border_color=30363d&hide_border=false" alt="Top Languages"/>
     </td>
     <td valign="top" width="50%">
       <img src="https://github-profile-trophy-gamma.vercel.app/?username=CS-LX&theme=discord&no-frame=true&no-bg=true&margin-w=4&column=2" alt="GitHub Trophy"/>
@@ -68,24 +68,24 @@
   <tr>
     <td width="50%">
       <a href="https://github.com/CS-LX/PowerfulWindSlickedBackHair_Winform">
-        <img src="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=CS-LX&repo=PowerfulWindSlickedBackHair_Winform&theme=dark&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=c9d1d9&border_color=30363d&hide_border=false" alt="PowerfulWindSlickedBackHair_Winform"/>
+        <img src="https://github-readme-stats-phi.vercel.app/api/pin/?username=CS-LX&repo=PowerfulWindSlickedBackHair_Winform&theme=dark&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=c9d1d9&border_color=30363d&hide_border=false" alt="PowerfulWindSlickedBackHair_Winform"/>
       </a>
     </td>
     <td width="50%">
       <a href="https://github.com/CS-LX/Inhuman">
-        <img src="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=CS-LX&repo=Inhuman&theme=dark&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=c9d1d9&border_color=30363d&hide_border=false" alt="Inhuman"/>
+        <img src="https://github-readme-stats-phi.vercel.app/api/pin/?username=CS-LX&repo=Inhuman&theme=dark&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=c9d1d9&border_color=30363d&hide_border=false" alt="Inhuman"/>
       </a>
     </td>
   </tr>
   <tr>
     <td width="50%">
       <a href="https://github.com/CS-LX/RecipaediaEX">
-        <img src="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=CS-LX&repo=RecipaediaEX&theme=dark&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=c9d1d9&border_color=30363d&hide_border=false" alt="RecipaediaEX"/>
+        <img src="https://github-readme-stats-phi.vercel.app/api/pin/?username=CS-LX&repo=RecipaediaEX&theme=dark&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=c9d1d9&border_color=30363d&hide_border=false" alt="RecipaediaEX"/>
       </a>
     </td>
     <td width="50%">
       <a href="https://github.com/CS-LX/SCEngine">
-        <img src="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=CS-LX&repo=SCEngine&theme=dark&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=c9d1d9&border_color=30363d&hide_border=false" alt="SCEngine"/>
+        <img src="https://github-readme-stats-phi.vercel.app/api/pin/?username=CS-LX&repo=SCEngine&theme=dark&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=c9d1d9&border_color=30363d&hide_border=false" alt="SCEngine"/>
       </a>
     </td>
   </tr>
