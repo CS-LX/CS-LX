@@ -44,7 +44,7 @@
       <img src="https://github-readme-stats-phi.vercel.app/api?username=CS-LX&show_icons=true&count_private=true&include_all_commits=true&theme=dark&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=c9d1d9&border_color=30363d&hide_border=false" alt="GitHub Stats"/>
     </td>
     <td valign="top" width="50%">
-      <img src="https://github-readme-streak-stats.herokuapp.com/?user=CS-LX&theme=dark&background=0d1117&border=30363d&stroke=30363d&ring=58a6ff&fire=58a6ff&currStreakLabel=58a6ff&sideLabels=c9d1d9&dates=8b949e" alt="GitHub Streak"/>
+      <img src="./profile/streak.svg" alt="GitHub Streak"/>
     </td>
   </tr>
   <tr>
