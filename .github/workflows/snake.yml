@@ -26,6 +26,7 @@ jobs:
 
       - name: Apply profile palette
         run: |
+          sudo chown -R "$(id -u):$(id -g)" dist
           find dist -name "*.svg" -print0 | xargs -0 sed -i \
             -e 's/#00c647/#58a6ff/g' \
             -e 's/#0f6d31/#1f6feb/g' \
