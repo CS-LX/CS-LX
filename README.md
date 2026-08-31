@@ -22,20 +22,20 @@
 
 ---
 
-## 👋 关于我
+## <img src="./profile/icons/user-smile.svg" width="24" height="24" alt="" style="vertical-align: -0.2em;" /> 关于我
 
-```text
-🎓 天津科技大学 · 独立游戏开发者 & 模组作者
-💻 主攻 C# / C++ / Lua · Unity 游戏开发
-🎮 Survivalcraft 生态 · 工业模组 · 配方系统
-🛠️  也在折腾 WinForms / Blender / 数字逻辑
-```
+<div>
+  <img src="./profile/icons/graduation-cap.svg" width="18" height="18" alt="" style="vertical-align: -0.18em;" /> 天津科技大学 · 独立游戏开发者 &amp; 模组作者<br/>
+  <img src="./profile/icons/code.svg" width="18" height="18" alt="" style="vertical-align: -0.18em;" /> 主攻 C# / C++ / Lua · Unity 游戏开发<br/>
+  <img src="./profile/icons/gamepad.svg" width="18" height="18" alt="" style="vertical-align: -0.18em;" /> Survivalcraft 生态 · 工业模组 · 配方系统<br/>
+  <img src="./profile/icons/tools.svg" width="18" height="18" alt="" style="vertical-align: -0.18em;" /> 也在折腾 WinForms / Blender / 数字逻辑
+</div>
 
 > *Learning C++++* — 持续探索系统底层与游戏机制的实现方式。
 
 ---
 
-## 📊 GitHub 数据
+## <img src="./profile/icons/bar-chart.svg" width="24" height="24" alt="" style="vertical-align: -0.2em;" /> GitHub 数据
 
 <!-- 统计卡片：统一深色主题 -->
 <table align="center" width="100%">
@@ -64,7 +64,7 @@
 
 ---
 
-## ⭐ 精选项目
+## <img src="./profile/icons/star.svg" width="24" height="24" alt="" style="vertical-align: -0.2em;" /> 精选项目
 
 <!-- featured-projects:start -->
 <table align="center" width="100%">
@@ -97,7 +97,7 @@
 
 ---
 
-## 🎮 已发布游戏
+## <img src="./profile/icons/gamepad.svg" width="24" height="24" alt="" style="vertical-align: -0.2em;" /> 已发布游戏
 
 <table align="center" width="100%">
   <thead>
@@ -182,7 +182,7 @@
 
 ---
 
-## 🔧 技术栈
+## <img src="./profile/icons/tools.svg" width="24" height="24" alt="" style="vertical-align: -0.2em;" /> 技术栈
 
 <div align="center">
 
@@ -198,7 +198,7 @@
 
 ---
 
-## 🐍 贡献贪吃蛇
+## <img src="./profile/icons/git-branch.svg" width="24" height="24" alt="" style="vertical-align: -0.2em;" /> 贡献贪吃蛇
 
 <!-- 需要 Actions 工作流生成 snake 动画，见 .github/workflows/snake.yml -->
 <div align="center">
@@ -213,7 +213,7 @@
 
 <div align="center">
 
-<sub>Built with ❤️ using</sub>
+<sub>Built with <img src="./profile/icons/heart.svg" width="12" height="12" alt="" style="vertical-align: -0.1em;" /> using</sub>
 <br/>
 <a href="https://github.com/anuraghazra/github-readme-stats">github-readme-stats</a> ·
 <a href="https://github.com/DenverCoder1/github-readme-streak-stats">streak-stats</a> ·
