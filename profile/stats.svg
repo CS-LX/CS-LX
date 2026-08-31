@@ -1,15 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="495" height="195" viewBox="0 0 495 195" role="img" aria-label="GitHub Stats">
-  <rect width="495" height="195" rx="8" fill="#0d1117"/>
-  <rect x="0.5" y="0.5" width="494" height="194" rx="7.5" fill="none" stroke="#30363d"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="495" height="225" viewBox="0 0 495 225" role="img" aria-label="GitHub Stats">
+  <rect width="495" height="225" rx="8" fill="#0d1117"/>
+  <rect x="0.5" y="0.5" width="494" height="224" rx="7.5" fill="none" stroke="#30363d"/>
   <path d="M8 8h3v27H8z" fill="#58a6ff"/>
-  <text x="24" y="29" fill="#f0f6fc" font-family="Segoe UI, Noto Sans, Arial, sans-serif" font-size="14" font-weight="700">GitHub Stats</text>
-  <line x1="16" y1="43.5" x2="479" y2="43.5" stroke="#21262d"/>
-<text x="24" y="79" fill="#58a6ff" font-family="Segoe UI, Noto Sans, Arial, sans-serif" font-size="23" font-weight="700" text-anchor="start">520</text>
-    <text x="24" y="99" fill="#8b949e" font-family="Segoe UI, Noto Sans, Arial, sans-serif" font-size="11" font-weight="400" text-anchor="start">Total Stars Earned</text>
-<text x="262" y="79" fill="#58a6ff" font-family="Segoe UI, Noto Sans, Arial, sans-serif" font-size="23" font-weight="700" text-anchor="start">1,109</text>
-    <text x="262" y="99" fill="#8b949e" font-family="Segoe UI, Noto Sans, Arial, sans-serif" font-size="11" font-weight="400" text-anchor="start">Total Commits</text>
-<text x="24" y="143" fill="#58a6ff" font-family="Segoe UI, Noto Sans, Arial, sans-serif" font-size="23" font-weight="700" text-anchor="start">11</text>
-    <text x="24" y="163" fill="#8b949e" font-family="Segoe UI, Noto Sans, Arial, sans-serif" font-size="11" font-weight="400" text-anchor="start">Total PRs</text>
-<text x="262" y="143" fill="#58a6ff" font-family="Segoe UI, Noto Sans, Arial, sans-serif" font-size="23" font-weight="700" text-anchor="start">14</text>
-    <text x="262" y="163" fill="#8b949e" font-family="Segoe UI, Noto Sans, Arial, sans-serif" font-size="11" font-weight="400" text-anchor="start">Total Issues</text>
+  <text x="24" y="31" fill="#f0f6fc" font-family="Segoe UI, Noto Sans, Arial, sans-serif" font-size="16" font-weight="700">GitHub Stats</text>
+  <line x1="16" y1="46.5" x2="479" y2="46.5" stroke="#21262d"/>
+<text x="24" y="91" fill="#58a6ff" font-family="Segoe UI, Noto Sans, Arial, sans-serif" font-size="28" font-weight="700" text-anchor="start">520</text>
+    <text x="24" y="114" fill="#8b949e" font-family="Segoe UI, Noto Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">Total Stars Earned</text>
+<text x="262" y="91" fill="#58a6ff" font-family="Segoe UI, Noto Sans, Arial, sans-serif" font-size="28" font-weight="700" text-anchor="start">1,110</text>
+    <text x="262" y="114" fill="#8b949e" font-family="Segoe UI, Noto Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">Total Commits</text>
+<text x="24" y="166" fill="#58a6ff" font-family="Segoe UI, Noto Sans, Arial, sans-serif" font-size="28" font-weight="700" text-anchor="start">11</text>
+    <text x="24" y="189" fill="#8b949e" font-family="Segoe UI, Noto Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">Total PRs</text>
+<text x="262" y="166" fill="#58a6ff" font-family="Segoe UI, Noto Sans, Arial, sans-serif" font-size="28" font-weight="700" text-anchor="start">14</text>
+    <text x="262" y="189" fill="#8b949e" font-family="Segoe UI, Noto Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">Total Issues</text>
 </svg>

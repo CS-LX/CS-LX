@@ -19,6 +19,11 @@ const colors = {
   empty: "#161b22",
 };
 
+const cardWidth = 495;
+const cardHeight = 225;
+const wideWidth = 1000;
+const wideHeight = 225;
+
 const headers = {
   Accept: "application/vnd.github+json",
   "User-Agent": "CS-LX-profile-generator",
@@ -188,15 +193,23 @@ function getStreaks(days) {
   return { current, longest };
 }
 
-function card(title, body) {
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="495" height="195" viewBox="0 0 495 195" role="img" aria-label="${escapeXml(title)}">
-  <rect width="495" height="195" rx="8" fill="${colors.background}"/>
-  <rect x="0.5" y="0.5" width="494" height="194" rx="7.5" fill="none" stroke="${colors.border}"/>
+function panel(width, height, title, body) {
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" role="img" aria-label="${escapeXml(title)}">
+  <rect width="${width}" height="${height}" rx="8" fill="${colors.background}"/>
+  <rect x="0.5" y="0.5" width="${width - 1}" height="${height - 1}" rx="7.5" fill="none" stroke="${colors.border}"/>
   <path d="M8 8h3v27H8z" fill="${colors.accent}"/>
-  <text x="24" y="29" fill="${colors.title}" font-family="Segoe UI, Noto Sans, Arial, sans-serif" font-size="14" font-weight="700">${escapeXml(title)}</text>
-  <line x1="16" y1="43.5" x2="479" y2="43.5" stroke="${colors.divider}"/>
+  <text x="24" y="31" fill="${colors.title}" font-family="Segoe UI, Noto Sans, Arial, sans-serif" font-size="16" font-weight="700">${escapeXml(title)}</text>
+  <line x1="16" y1="46.5" x2="${width - 16}" y2="46.5" stroke="${colors.divider}"/>
 ${body}
 </svg>`;
+}
+
+function card(title, body) {
+  return panel(cardWidth, cardHeight, title, body);
+}
+
+function wideCard(title, body) {
+  return panel(wideWidth, wideHeight, title, body);
 }
 
 function textLine(x, y, text, options = {}) {
@@ -212,12 +225,12 @@ function renderStats({ stars, totals }) {
     ["Total Issues", totals.issues],
   ];
   const positions = [
-    [24, 79], [262, 79], [24, 143], [262, 143],
+    [24, 91], [262, 91], [24, 166], [262, 166],
   ];
   const content = metrics.map(([label, value], index) => {
     const [x, y] = positions[index];
-    return `${textLine(x, y, compactNumber(value), { fill: colors.accent, size: 23, weight: 700 })}
-    ${textLine(x, y + 20, label, { fill: colors.muted, size: 11 })}`;
+    return `${textLine(x, y, compactNumber(value), { fill: colors.accent, size: 28, weight: 700 })}
+    ${textLine(x, y + 23, label, { fill: colors.muted, size: 13 })}`;
   }).join("\n");
   return card("GitHub Stats", content);
 }
@@ -234,26 +247,26 @@ function renderStreak(days, streaks) {
     [247.5, compactNumber(streaks.current.length), "Current Streak", rangeText(streaks.current)],
     [412.5, compactNumber(streaks.longest.length), "Longest Streak", rangeText(streaks.longest)],
   ];
-  const dividers = `<line x1="165" y1="61" x2="165" y2="171" stroke="${colors.divider}"/>
-  <line x1="330" y1="61" x2="330" y2="171" stroke="${colors.divider}"/>`;
+  const dividers = `<line x1="165" y1="66" x2="165" y2="198" stroke="${colors.divider}"/>
+  <line x1="330" y1="66" x2="330" y2="198" stroke="${colors.divider}"/>`;
   const content = `${dividers}\n${columns.map(([x, value, label, range]) => `
-    ${textLine(x, 95, value, { fill: colors.accent, size: 28, weight: 700, anchor: "middle" })}
-    ${textLine(x, 121, label, { fill: colors.text, size: 12, anchor: "middle" })}
-    ${textLine(x, 147, range, { fill: colors.muted, size: 10, anchor: "middle" })}`).join("\n")}`;
+    ${textLine(x, 105, value, { fill: colors.accent, size: 32, weight: 700, anchor: "middle" })}
+    ${textLine(x, 136, label, { fill: colors.text, size: 14, anchor: "middle" })}
+    ${textLine(x, 164, range, { fill: colors.muted, size: 12, anchor: "middle" })}`).join("\n")}`;
   return card("GitHub Streak", content);
 }
 
 function renderLanguages(languages) {
   const total = languages.reduce((sum, [, bytes]) => sum + bytes, 0) || 1;
   const rows = languages.slice(0, 8).map(([name, bytes], index) => {
-    const y = 62 + index * 16;
+    const y = 73 + index * 19;
     const percent = (bytes / total) * 100;
-    return `${textLine(24, y, name, { size: 11 })}
-    <rect x="160" y="${y - 9}" width="250" height="7" rx="3.5" fill="${colors.empty}"/>
-    <rect x="160" y="${y - 9}" width="${Math.max(3, 250 * percent / 100).toFixed(1)}" height="7" rx="3.5" fill="${colors.accentStrong}"/>
-    ${textLine(468, y, `${percent.toFixed(1)}%`, { fill: colors.muted, size: 10, anchor: "end" })}`;
+    return `${textLine(30, y, name, { size: 14 })}
+    <rect x="260" y="${y - 11}" width="620" height="9" rx="4.5" fill="${colors.empty}"/>
+    <rect x="260" y="${y - 11}" width="${Math.max(4, 620 * percent / 100).toFixed(1)}" height="9" rx="4.5" fill="${colors.accentStrong}"/>
+    ${textLine(950, y, `${percent.toFixed(1)}%`, { fill: colors.muted, size: 13, anchor: "end" })}`;
   }).join("\n");
-  return card("Top Languages", rows);
+  return wideCard("Top Languages", rows);
 }
 
 function renderActivity(days) {
@@ -274,21 +287,13 @@ function renderActivity(days) {
   const monthLabels = weekStarts.map((week, index) => {
     const previous = index === 0 ? null : weekStarts[index - 1];
     if (index !== 0 && week.getUTCMonth() === previous.getUTCMonth()) return "";
-    return textLine(60 + index * 17, 59, new Intl.DateTimeFormat("en", { month: "short", timeZone: "UTC" }).format(week), { fill: colors.muted, size: 10 });
+    return textLine(60 + index * 17, 65, new Intl.DateTimeFormat("en", { month: "short", timeZone: "UTC" }).format(week), { fill: colors.muted, size: 12 });
   }).join("\n");
   const cells = weekStarts.flatMap((week, weekIndex) => Array.from({ length: 7 }, (_, dayIndex) => {
     const value = days.get(dateOnly(addDays(week, dayIndex))) ?? 0;
-    return `<rect x="${60 + weekIndex * 17}" y="${68 + dayIndex * 17}" width="12" height="12" rx="2" fill="${shade(value)}"><title>${escapeXml(`${dateOnly(addDays(week, dayIndex))}: ${value} contributions`)}</title></rect>`;
+    return `<rect x="${60 + weekIndex * 17}" y="${77 + dayIndex * 17}" width="14" height="14" rx="2" fill="${shade(value)}"><title>${escapeXml(`${dateOnly(addDays(week, dayIndex))}: ${value} contributions`)}</title></rect>`;
   })).join("\n");
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="205" viewBox="0 0 1000 205" role="img" aria-label="Activity Graph">
-  <rect width="1000" height="205" rx="8" fill="${colors.background}"/>
-  <rect x="0.5" y="0.5" width="999" height="204" rx="7.5" fill="none" stroke="${colors.border}"/>
-  <path d="M8 8h3v27H8z" fill="${colors.accent}"/>
-  ${textLine(24, 29, "Activity Graph", { fill: colors.title, size: 14, weight: 700 })}
-  <line x1="16" y1="43.5" x2="984" y2="43.5" stroke="${colors.divider}"/>
-  ${monthLabels}
-  ${cells}
-</svg>`;
+  return panel(wideWidth, 245, "Activity Graph", `${monthLabels}\n${cells}`);
 }
 
 function wrapText(value, maxLength, maxLines) {
@@ -317,28 +322,30 @@ function wrapText(value, maxLength, maxLines) {
 function renderProject(repository) {
   const nameLines = wrapText(repository.name, 38, 2);
   const descriptionLines = wrapText(repository.description, 55, 2);
-  const name = nameLines.map((line, index) => textLine(24, 72 + index * 20, line, { fill: colors.title, size: 16, weight: 700 })).join("\n");
-  const descriptionY = 72 + nameLines.length * 20 + 8;
-  const description = descriptionLines.map((line, index) => textLine(24, descriptionY + index * 16, line, { fill: colors.text, size: 11 })).join("\n");
+  const name = nameLines.map((line, index) => textLine(24, 78 + index * 22, line, { fill: colors.title, size: 18, weight: 700 })).join("\n");
+  const descriptionY = 78 + nameLines.length * 22 + 10;
+  const description = descriptionLines.map((line, index) => textLine(24, descriptionY + index * 18, line, { fill: colors.text, size: 13 })).join("\n");
   const meta = [
     `★ ${compactNumber(repository.stargazers_count)}`,
     `⑂ ${compactNumber(repository.forks_count)}`,
     repository.language,
   ].filter(Boolean).join("   ");
-  return card(repository.name, `${name}\n${description}\n${textLine(24, 173, meta, { fill: colors.muted, size: 11 })}`);
+  return card(repository.name, `${name}\n${description}\n${textLine(24, 201, meta, { fill: colors.muted, size: 13 })}`);
 }
 
 function renderTrophies(source) {
   const dimensions = source.match(/<svg\s+[^>]*width="(\d+)"\s+height="(\d+)"[^>]*>/s);
   if (!dimensions) throw new Error("Unable to read trophy SVG dimensions");
   const [width, height] = dimensions.slice(1).map(Number);
-  const scale = Math.min(451 / width, 135 / height);
+  const trophyWidth = 1000;
+  const trophyHeight = 290;
+  const scale = Math.min(900 / width, 220 / height);
   const renderedWidth = width * scale;
   const renderedHeight = height * scale;
-  const x = (495 - renderedWidth) / 2;
-  const y = 50 + (135 - renderedHeight) / 2;
+  const x = (trophyWidth - renderedWidth) / 2;
+  const y = 57 + (220 - renderedHeight) / 2;
   const encoded = Buffer.from(source).toString("base64");
-  return card("GitHub Trophy", `<image x="${x.toFixed(1)}" y="${y.toFixed(1)}" width="${renderedWidth.toFixed(1)}" height="${renderedHeight.toFixed(1)}" href="data:image/svg+xml;base64,${encoded}"/>`);
+  return panel(trophyWidth, trophyHeight, "GitHub Trophy", `<image x="${x.toFixed(1)}" y="${y.toFixed(1)}" width="${renderedWidth.toFixed(1)}" height="${renderedHeight.toFixed(1)}" href="data:image/svg+xml;base64,${encoded}"/>`);
 }
 
 async function writeSvg(path, content) {

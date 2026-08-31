@@ -47,15 +47,15 @@
       <img src="./profile/streak.svg" alt="GitHub Streak" width="100%"/>
     </td>
   </tr>
-  <tr>
-    <td valign="top" width="50%" align="center">
-      <img src="./profile/languages.svg" alt="Top Languages" width="100%"/>
-    </td>
-    <td valign="top" width="50%" align="center">
-      <img src="./profile/trophies.svg" alt="GitHub Trophy" width="100%"/>
-    </td>
-  </tr>
 </table>
+
+<p align="center">
+  <img src="./profile/languages.svg" alt="Top Languages" width="100%"/>
+</p>
+
+<p align="center">
+  <img src="./profile/trophies.svg" alt="GitHub Trophy" width="100%"/>
+</p>
 
 <!-- 贡献活动图 -->
 <p align="center">
