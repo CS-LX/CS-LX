@@ -1,9 +1,10 @@
-import { mkdir, writeFile } from "node:fs/promises";
+import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 
 const login = "CS-LX";
 const root = resolve(import.meta.dirname, "..", "..");
 const profileDir = resolve(root, "profile");
+const readmePath = resolve(root, "README.md");
 const token = process.env.GITHUB_TOKEN ?? process.env.GH_TOKEN;
 
 const colors = {
@@ -351,6 +352,44 @@ function renderProject(repository) {
   return card(repository.name, `${name}\n${description}\n${metadataSvg}`);
 }
 
+function featuredProjectSection(repositories, eol) {
+  const cells = repositories.map((repository) => [
+    "    <td width=\"50%\" align=\"center\">",
+    `      <a href=\"${repository.html_url}\">`,
+    `        <img src=\"./profile/projects/${repository.name}.svg\" alt=\"${repository.name}\" width=\"100%\"/>`,
+    "      </a>",
+    "    </td>",
+  ].join(eol));
+  const rows = [0, 2].map((start) => [
+    "  <tr>",
+    cells.slice(start, start + 2).join(eol),
+    "  </tr>",
+  ].join(eol));
+  return [
+    "<!-- featured-projects:start -->",
+    "<table align=\"center\" width=\"100%\">",
+    rows.join(eol),
+    "</table>",
+    "<!-- featured-projects:end -->",
+  ].join(eol);
+}
+
+async function writeFeaturedProjectSection(repositories) {
+  const readme = await readFile(readmePath, "utf8");
+  const startMarker = "<!-- featured-projects:start -->";
+  const endMarker = "<!-- featured-projects:end -->";
+  const start = readme.indexOf(startMarker);
+  const end = readme.indexOf(endMarker);
+  if (start === -1 || end === -1 || end < start) {
+    throw new Error("Featured project markers are missing from README.md");
+  }
+
+  const eol = readme.includes("\r\n") ? "\r\n" : "\n";
+  const replacement = featuredProjectSection(repositories, eol);
+  const updated = `${readme.slice(0, start)}${replacement}${readme.slice(end + endMarker.length)}`;
+  if (updated !== readme) await writeFile(readmePath, updated, "utf8");
+}
+
 function renderTrophies(source) {
   const dimensions = source.match(/<svg\s+[^>]*width="(\d+)"\s+height="(\d+)"[^>]*>/s);
   if (!dimensions) throw new Error("Unable to read trophy SVG dimensions");
@@ -401,7 +440,15 @@ async function main() {
   const languages = [...languageBytes.entries()].sort(([, left], [, right]) => right - left);
   const stars = ownedRepositories.reduce((sum, repository) => sum + repository.stargazers_count, 0);
   const streaks = getStreaks(history.days);
-  const selected = ["PowerfulWindSlickedBackHair_Winform", "Inhuman", "RecipaediaEX", "SCEngine"];
+  const featuredRepositories = [...ownedRepositories]
+    .sort((left, right) => right.stargazers_count - left.stargazers_count
+      || right.forks_count - left.forks_count
+      || new Date(right.updated_at) - new Date(left.updated_at)
+      || left.name.localeCompare(right.name))
+    .slice(0, 4);
+  if (featuredRepositories.length < 4) {
+    throw new Error("At least four public repositories are required for the featured project section");
+  }
 
   await Promise.all([
     writeSvg(resolve(profileDir, "stats.svg"), renderStats({ stars, totals: history.totals })),
@@ -409,11 +456,8 @@ async function main() {
     writeSvg(resolve(profileDir, "languages.svg"), renderLanguages(languages)),
     ...(trophySource ? [writeSvg(resolve(profileDir, "trophies.svg"), renderTrophies(trophySource))] : []),
     writeSvg(resolve(profileDir, "activity.svg"), renderActivity(history.days)),
-    ...selected.map((name) => {
-      const repository = ownedRepositories.find((entry) => entry.name === name);
-      if (!repository) throw new Error(`Selected repository not found: ${name}`);
-      return writeSvg(resolve(profileDir, "projects", `${name}.svg`), renderProject(repository));
-    }),
+    writeFeaturedProjectSection(featuredRepositories),
+    ...featuredRepositories.map((repository) => writeSvg(resolve(profileDir, "projects", `${repository.name}.svg`), renderProject(repository))),
   ]);
 }
 

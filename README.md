@@ -66,11 +66,24 @@
 
 ## ⭐ 精选项目
 
+<!-- featured-projects:start -->
 <table align="center" width="100%">
   <tr>
     <td width="50%" align="center">
+      <a href="https://github.com/CS-LX/CPURacer">
+        <img src="./profile/projects/CPURacer.svg" alt="CPURacer" width="100%"/>
+      </a>
+    </td>
+    <td width="50%" align="center">
       <a href="https://github.com/CS-LX/PowerfulWindSlickedBackHair_Winform">
         <img src="./profile/projects/PowerfulWindSlickedBackHair_Winform.svg" alt="PowerfulWindSlickedBackHair_Winform" width="100%"/>
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center">
+      <a href="https://github.com/CS-LX/RickAstley.exe-RinRorm.exe-">
+        <img src="./profile/projects/RickAstley.exe-RinRorm.exe-.svg" alt="RickAstley.exe-RinRorm.exe-" width="100%"/>
       </a>
     </td>
     <td width="50%" align="center">
@@ -79,19 +92,8 @@
       </a>
     </td>
   </tr>
-  <tr>
-    <td width="50%" align="center">
-      <a href="https://github.com/CS-LX/RecipaediaEX">
-        <img src="./profile/projects/RecipaediaEX.svg" alt="RecipaediaEX" width="100%"/>
-      </a>
-    </td>
-    <td width="50%" align="center">
-      <a href="https://github.com/CS-LX/SCEngine">
-        <img src="./profile/projects/SCEngine.svg" alt="SCEngine" width="100%"/>
-      </a>
-    </td>
-  </tr>
 </table>
+<!-- featured-projects:end -->
 
 ---
 
