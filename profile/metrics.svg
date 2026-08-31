@@ -1,22 +1,22 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="960" height="218" viewBox="0 0 960 218" role="img" aria-labelledby="title desc">
-  <title id="title">CS-LX automated profile snapshot</title>
-  <desc id="desc">GitHub profile data is refreshed automatically every six hours.</desc>
-  <rect width="960" height="218" fill="#0d1117"/>
-  <rect x="1" y="1" width="958" height="216" rx="10" fill="none" stroke="#30363d" stroke-width="2"/>
-  <path d="M32 59H928" stroke="#30363d"/>
-  <circle cx="40" cy="32" r="6" fill="#58a6ff"/>
-  <text x="58" y="37" fill="#c9d1d9" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="700" letter-spacing="2">PROFILE SIGNAL / BOOTSTRAP SNAPSHOT</text>
-  <text x="928" y="37" fill="#8b949e" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12">REFRESHES EVERY 6H</text>
-  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
-    <text x="40" y="101" fill="#f0f6fc" font-size="38" font-weight="700">70</text>
-    <text x="40" y="127" fill="#8b949e" font-size="12" letter-spacing="1">PUBLIC REPOS</text>
-    <text x="280" y="101" fill="#58a6ff" font-size="26" font-weight="700">6H</text>
-    <text x="280" y="127" fill="#8b949e" font-size="12" letter-spacing="1">SYNC INTERVAL</text>
-    <text x="520" y="101" fill="#c9d1d9" font-size="22" font-weight="700">GITHUB</text>
-    <text x="520" y="127" fill="#8b949e" font-size="12" letter-spacing="1">DATA SOURCE</text>
-    <text x="760" y="101" fill="#c9d1d9" font-size="22" font-weight="700">ACTIONS</text>
-    <text x="760" y="127" fill="#8b949e" font-size="12" letter-spacing="1">AUTOMATED</text>
-  </g>
-  <path d="M32 158H928" stroke="#30363d"/>
-  <text x="40" y="190" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12">The next workflow run replaces this bootstrap card with a live GitHub API snapshot.</text>
+<title id="title">CS-LX live GitHub profile snapshot</title>
+<desc id="desc">Automatically generated GitHub profile metrics.</desc>
+<rect width="960" height="218" fill="#0d1117"/>
+<rect x="1" y="1" width="958" height="216" rx="10" fill="none" stroke="#30363d" stroke-width="2"/>
+<path d="M32 59H928" stroke="#30363d"/>
+<circle cx="40" cy="32" r="6" fill="#58a6ff"/>
+<text x="58" y="37" fill="#c9d1d9" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="700" letter-spacing="2">PROFILE SIGNAL / LIVE SNAPSHOT</text>
+<text x="928" y="37" fill="#8b949e" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12">REFRESHED 2026-08-31 08:27 UTC</text>
+<g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+  <text x="40" y="101" fill="#f0f6fc" font-size="38" font-weight="700">70</text>
+  <text x="40" y="127" fill="#8b949e" font-size="12" letter-spacing="1">PUBLIC REPOS</text>
+  <text x="280" y="101" fill="#58a6ff" font-size="38" font-weight="700">48</text>
+  <text x="280" y="127" fill="#8b949e" font-size="12" letter-spacing="1">FOLLOWERS</text>
+  <text x="520" y="101" fill="#c9d1d9" font-size="38" font-weight="700">520</text>
+  <text x="520" y="127" fill="#8b949e" font-size="12" letter-spacing="1">TOTAL STARS</text>
+  <text x="760" y="101" fill="#c9d1d9" font-size="18" font-weight="700">CPURacer</text>
+  <text x="760" y="127" fill="#8b949e" font-size="12" letter-spacing="1">LATEST UPDATED REPO</text>
+</g>
+<path d="M32 158H928" stroke="#30363d"/>
+<text x="40" y="190" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12">SOURCE: GitHub REST API · GENERATED IN-REPOSITORY · NEXT SYNC IN 6 HOURS</text>
 </svg>
