@@ -38,54 +38,56 @@
 ## 📊 GitHub 数据
 
 <!-- 统计卡片：统一深色主题 -->
-<table>
+<table align="center" width="100%">
   <tr>
-    <td valign="top" width="50%">
-      <img src="https://github-readme-stats-phi.vercel.app/api?username=CS-LX&show_icons=true&count_private=true&include_all_commits=true&theme=dark&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=c9d1d9&border_color=30363d&hide_border=false" alt="GitHub Stats"/>
+    <td valign="top" width="50%" align="center">
+      <img src="./profile/stats.svg" alt="GitHub Stats" width="100%"/>
     </td>
-    <td valign="top" width="50%">
-      <img src="./profile/streak.svg" alt="GitHub Streak"/>
+    <td valign="top" width="50%" align="center">
+      <img src="./profile/streak.svg" alt="GitHub Streak" width="100%"/>
     </td>
   </tr>
   <tr>
-    <td valign="top" width="50%">
-      <img src="https://github-readme-stats-phi.vercel.app/api/top-langs/?username=CS-LX&layout=compact&langs_count=8&theme=dark&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&border_color=30363d&hide_border=false" alt="Top Languages"/>
+    <td valign="top" width="50%" align="center">
+      <img src="./profile/languages.svg" alt="Top Languages" width="100%"/>
     </td>
-    <td valign="top" width="50%">
-      <img src="https://github-profile-trophy-gamma.vercel.app/?username=CS-LX&theme=discord&no-frame=true&no-bg=true&margin-w=4&column=2" alt="GitHub Trophy"/>
+    <td valign="top" width="50%" align="center">
+      <img src="./profile/trophies.svg" alt="GitHub Trophy" width="100%"/>
     </td>
   </tr>
 </table>
 
 <!-- 贡献活动图 -->
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=CS-LX&theme=react-dark&hide_border=true&area=true&bg_color=0d1117&color=58a6ff&line=58a6ff&point=c9d1d9&area_color=1f6feb" alt="Activity Graph"/>
+<p align="center">
+  <img src="./profile/activity.svg" alt="Activity Graph" width="100%"/>
+</p>
 
 ---
 
 ## ⭐ 精选项目
 
-<table>
+<table align="center" width="100%">
   <tr>
-    <td width="50%">
+    <td width="50%" align="center">
       <a href="https://github.com/CS-LX/PowerfulWindSlickedBackHair_Winform">
-        <img src="https://github-readme-stats-phi.vercel.app/api/pin/?username=CS-LX&repo=PowerfulWindSlickedBackHair_Winform&theme=dark&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=c9d1d9&border_color=30363d&hide_border=false" alt="PowerfulWindSlickedBackHair_Winform"/>
+        <img src="./profile/projects/PowerfulWindSlickedBackHair_Winform.svg" alt="PowerfulWindSlickedBackHair_Winform" width="100%"/>
       </a>
     </td>
-    <td width="50%">
+    <td width="50%" align="center">
       <a href="https://github.com/CS-LX/Inhuman">
-        <img src="https://github-readme-stats-phi.vercel.app/api/pin/?username=CS-LX&repo=Inhuman&theme=dark&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=c9d1d9&border_color=30363d&hide_border=false" alt="Inhuman"/>
+        <img src="./profile/projects/Inhuman.svg" alt="Inhuman" width="100%"/>
       </a>
     </td>
   </tr>
   <tr>
-    <td width="50%">
+    <td width="50%" align="center">
       <a href="https://github.com/CS-LX/RecipaediaEX">
-        <img src="https://github-readme-stats-phi.vercel.app/api/pin/?username=CS-LX&repo=RecipaediaEX&theme=dark&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=c9d1d9&border_color=30363d&hide_border=false" alt="RecipaediaEX"/>
+        <img src="./profile/projects/RecipaediaEX.svg" alt="RecipaediaEX" width="100%"/>
       </a>
     </td>
-    <td width="50%">
+    <td width="50%" align="center">
       <a href="https://github.com/CS-LX/SCEngine">
-        <img src="https://github-readme-stats-phi.vercel.app/api/pin/?username=CS-LX&repo=SCEngine&theme=dark&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=c9d1d9&border_color=30363d&hide_border=false" alt="SCEngine"/>
+        <img src="./profile/projects/SCEngine.svg" alt="SCEngine" width="100%"/>
       </a>
     </td>
   </tr>
@@ -95,7 +97,7 @@
 
 ## 🎮 已发布游戏
 
-<table width="100%">
+<table align="center" width="100%">
   <thead>
     <tr align="left">
       <th width="30%">游戏图标 & 名称 (Icon & Name)</th>
@@ -186,11 +188,13 @@
 ## 🐍 贡献贪吃蛇
 
 <!-- 需要 Actions 工作流生成 snake 动画，见 .github/workflows/snake.yml -->
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/output/github-contribution-grid-snake.svg">
-  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/CS-LX/CS-LX/output/github-contribution-grid-snake-dark.svg">
-</picture>
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/output/github-contribution-grid-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/output/github-contribution-grid-snake.svg">
+    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/CS-LX/CS-LX/output/github-contribution-grid-snake-dark.svg" width="100%">
+  </picture>
+</div>
 
 ---
 

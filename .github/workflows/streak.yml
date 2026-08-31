@@ -1,4 +1,4 @@
-name: Generate Streak Stats
+name: Update Profile Components
 
 on:
   schedule:
@@ -8,6 +8,7 @@ on:
     branches: [main]
     paths:
       - ".github/workflows/streak.yml"
+      - ".github/scripts/generate-profile.mjs"
 
 jobs:
   generate:
@@ -17,21 +18,23 @@ jobs:
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
 
-      - uses: DenverCoder1/github-readme-streak-stats@f69662e10794e8757b12d3303a113a30b01c9bc9
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          path: profile/streak.svg
-          options: >-
-            user=CS-LX&theme=dark&background=0D1117&border=30363D&stroke=30363D&ring=58A6FF&fire=58A6FF&currStreakLabel=58A6FF&sideLabels=C9D1D9&dates=8B949E
+          node-version: 22
 
-      - name: Commit streak SVG
+      - name: Generate local profile SVGs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node .github/scripts/generate-profile.mjs
+
+      - name: Commit profile SVGs
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add profile/streak.svg
+          git add profile
           if git diff --staged --quiet; then
-            echo "No streak changes"
+            echo "No profile SVG changes"
           else
-            git commit -m "chore: update streak stats"
+            git commit -m "chore: update profile components"
             git push
           fi
