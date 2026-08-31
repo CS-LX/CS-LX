@@ -1,95 +1,210 @@
 <div align="center">
-  <img src="./profile/hero.svg" alt="CS-LX — game developer, modder and systems tinkerer" width="960" />
 
-  <p>
-    <a href="https://github.com/CS-LX">GitHub</a> ·
-    <a href="https://space.bilibili.com/312642275">Bilibili</a> ·
-    <a href="https://steamcommunity.com/profiles/76561199222124610/">Steam</a> ·
-    <a href="https://www.taptap.cn/user/570079718">TapTap</a> ·
-    <a href="mailto:1659404657@qq.com">Email</a>
-  </p>
+<!-- 打字机动画标题 -->
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&multiline=true&repeat=false&width=600&height=180&lines=%E9%92%85%E7%A6%BB-LX;Game+Developer+%7C+Modder;Learning+C%2B%2B%2B%2B;Welcome+to+my+GitHub!" alt="Typing SVG" />
+
+<!-- 个人简介徽章 -->
+[![Profile Views](https://komarev.com/ghpvc/?username=CS-LX&color=58a6ff&style=for-the-badge&label=PROFILE+VIEWS)](https://github.com/CS-LX)
+[![GitHub User](https://img.shields.io/badge/CS--LX-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/CS-LX)
+[![Company](https://img.shields.io/badge/天津科技大学-0052CC?style=for-the-badge&logo=google-scholar&logoColor=white)](https://github.com/CS-LX)
+[![Repos](https://img.shields.io/badge/dynamic/json?style=for-the-badge&label=Public+Repos&query=%24.public_repos&url=https%3A%2F%2Fapi.github.com%2Fusers%2FCS-LX&color=21262d&labelColor=30363d)](https://github.com/CS-LX?tab=repositories)
+
+<br/>
+
+<!-- 社交链接 -->
+[![Bilibili](https://img.shields.io/badge/dynamic/json?style=for-the-badge&label=Bilibili+Fans&labelColor=FE7398&color=282c34&query=$.data.follower&url=https://api.bilibili.com/x/relation/stat?vmid=312642275&longCache=true&logo=bilibili&logoColor=white)](https://space.bilibili.com/312642275)
+[![GitHub Followers](https://img.shields.io/github/followers/CS-LX?style=for-the-badge&logo=github&label=GitHub%20Followers&color=353940&labelColor=282c34)](https://github.com/CS-LX)
+[![QQ](https://img.shields.io/static/v1?style=for-the-badge&label=QQ&message=1659404657&color=353940&labelColor=1793D1&logo=maildotru)](mailto:1659404657@qq.com)
+[![Steam](https://img.shields.io/badge/Steam-000000?style=for-the-badge&logo=steam&logoColor=white)](https://steamcommunity.com/profiles/76561199222124610/)
+[![TapTap](https://img.shields.io/badge/TapTap-24DBB6?style=for-the-badge&logo=taptap&logoColor=black)](https://www.taptap.cn/user/570079718)
+
 </div>
 
-## / ABOUT
+---
 
-> 把游戏机制拆开看，再把它们做成可玩的系统。
-
-我叫钅离（LX），就读于天津科技大学，是一名独立游戏开发者与模组作者。
-我关注玩法系统、工业模组、配方设计与工具开发；也会在 Unity、WinForms、Blender 和数字逻辑之间来回折腾。
+## 👋 关于我
 
 ```text
-MAIN QUEST      C# / C++ / Lua · Unity gameplay engineering
-SIDE QUEST      Survivalcraft modding · recipe & industrial systems
-TOOLBELT        Git · Rider · Visual Studio · Blender · Figma
-CURRENT MODE    Learning C++++, one mechanism at a time
+🎓 天津科技大学 · 独立游戏开发者 & 模组作者
+💻 主攻 C# / C++ / Lua · Unity 游戏开发
+🎮 Survivalcraft 生态 · 工业模组 · 配方系统
+🛠️  也在折腾 WinForms / Blender / 数字逻辑
 ```
 
-## / PROFILE SIGNAL
+> *Learning C++++* — 持续探索系统底层与游戏机制的实现方式。
 
-<img src="./profile/metrics.svg" alt="Automated GitHub profile snapshot" width="960" />
+---
 
+## 📊 GitHub 数据
+
+<!-- 统计卡片：统一深色主题 -->
 <table>
   <tr>
-    <td width="50%" valign="top">
-      <img src="./profile/streak.svg" alt="GitHub contribution streak" width="495" />
+    <td valign="top" width="50%">
+      <img src="https://github-readme-stats-phi.vercel.app/api?username=CS-LX&show_icons=true&count_private=true&include_all_commits=true&theme=dark&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=c9d1d9&border_color=30363d&hide_border=false" alt="GitHub Stats"/>
     </td>
-    <td width="50%" valign="top">
-      <strong>LOCAL-FIRST PROFILE</strong><br/><br/>
-      The visual system is generated and stored in this repository. It does not depend on public badge, stats, trophy, typing, or activity-graph services at render time.<br/><br/>
-      <sub>Snapshot refresh: every 6 hours via GitHub Actions.</sub>
+    <td valign="top" width="50%">
+      <img src="./profile/streak.svg" alt="GitHub Streak"/>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" width="50%">
+      <img src="https://github-readme-stats-phi.vercel.app/api/top-langs/?username=CS-LX&layout=compact&langs_count=8&theme=dark&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&border_color=30363d&hide_border=false" alt="Top Languages"/>
+    </td>
+    <td valign="top" width="50%">
+      <img src="https://github-profile-trophy-gamma.vercel.app/?username=CS-LX&theme=discord&no-frame=true&no-bg=true&margin-w=4&column=2" alt="GitHub Trophy"/>
     </td>
   </tr>
 </table>
 
-## / SELECTED BUILDS
+<!-- 贡献活动图 -->
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=CS-LX&theme=react-dark&hide_border=true&area=true&bg_color=0d1117&color=58a6ff&line=58a6ff&point=c9d1d9&area_color=1f6feb" alt="Activity Graph"/>
 
-| Project | Focus |
-| :-- | :-- |
-| [PowerfulWindSlickedBackHair_Winform](https://github.com/CS-LX/PowerfulWindSlickedBackHair_Winform) | WinForms experiment |
-| [Inhuman](https://github.com/CS-LX/Inhuman) | Independent game development |
-| [RecipaediaEX](https://github.com/CS-LX/RecipaediaEX) | Recipe-system exploration |
-| [SCEngine](https://github.com/CS-LX/SCEngine) | Survivalcraft ecosystem tooling |
+---
 
-## / SHIPPED GAMES
+## ⭐ 精选项目
 
 <table>
   <tr>
-    <td width="64" valign="middle"><img src="./Images/StencilMask.png" alt="StencilMask" width="52" /></td>
-    <td valign="middle"><strong>01 — StencilMask</strong><br/><sub>PROGRAMMER · Global Game Jam 2026, Beijing AF site · Best Art Award</sub></td>
-    <td valign="middle" align="right"><a href="https://www.taptap.cn/app/814328">TapTap</a></td>
+    <td width="50%">
+      <a href="https://github.com/CS-LX/PowerfulWindSlickedBackHair_Winform">
+        <img src="https://github-readme-stats-phi.vercel.app/api/pin/?username=CS-LX&repo=PowerfulWindSlickedBackHair_Winform&theme=dark&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=c9d1d9&border_color=30363d&hide_border=false" alt="PowerfulWindSlickedBackHair_Winform"/>
+      </a>
+    </td>
+    <td width="50%">
+      <a href="https://github.com/CS-LX/Inhuman">
+        <img src="https://github-readme-stats-phi.vercel.app/api/pin/?username=CS-LX&repo=Inhuman&theme=dark&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=c9d1d9&border_color=30363d&hide_border=false" alt="Inhuman"/>
+      </a>
+    </td>
   </tr>
   <tr>
-    <td width="64" valign="middle"><img src="./Images/NullKitchenException.png" alt="有病才能当牛马" width="52" /></td>
-    <td valign="middle"><strong>02 — 有病才能当牛马</strong><br/><sub>PRODUCER / PROGRAMMER / ARTIST · TapTap 21-Day Challenge 2025 · Participation Award</sub></td>
-    <td valign="middle" align="right"><a href="https://www.taptap.cn/app/779871">TapTap</a> · <a href="https://store.steampowered.com/app/4143170">Steam</a></td>
-  </tr>
-  <tr>
-    <td width="64" valign="middle"><img src="./Images/Darkrune.png" alt="本关考验你听声辩位功夫" width="52" /></td>
-    <td valign="middle"><strong>03 — 本关考验你听声辩位功夫</strong><br/><sub>LEAD ARTIST / PROGRAMMER / DESIGNER · TapTap Spotlight 48h Jam 2025, Wuhan</sub></td>
-    <td valign="middle" align="right"><a href="https://www.taptap.cn/app/789796">TapTap</a></td>
-  </tr>
-  <tr>
-    <td width="64" valign="middle"><img src="./Images/NeoFolder.png" alt="新建文件夹" width="52" /></td>
-    <td valign="middle"><strong>04 — 新建文件夹 / New Folder</strong><br/><sub>PROGRAMMER · TapTap Spotlight 48h Jam 2025, Chengdu</sub></td>
-    <td valign="middle" align="right"><a href="https://www.taptap.cn/app/800774">TapTap</a></td>
-  </tr>
-  <tr>
-    <td width="64" valign="middle"><img src="./Images/Shadown.png" alt="影射-Shadown" width="52" /></td>
-    <td valign="middle"><strong>05 — 影射 / Shadown</strong><br/><sub>PRODUCER · Independent project</sub></td>
-    <td valign="middle" align="right"><a href="https://www.taptap.cn/app/793993">TapTap</a> · <a href="https://store.steampowered.com/app/4499100/">Steam</a></td>
+    <td width="50%">
+      <a href="https://github.com/CS-LX/RecipaediaEX">
+        <img src="https://github-readme-stats-phi.vercel.app/api/pin/?username=CS-LX&repo=RecipaediaEX&theme=dark&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=c9d1d9&border_color=30363d&hide_border=false" alt="RecipaediaEX"/>
+      </a>
+    </td>
+    <td width="50%">
+      <a href="https://github.com/CS-LX/SCEngine">
+        <img src="https://github-readme-stats-phi.vercel.app/api/pin/?username=CS-LX&repo=SCEngine&theme=dark&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=c9d1d9&border_color=30363d&hide_border=false" alt="SCEngine"/>
+      </a>
+    </td>
   </tr>
 </table>
 
-## / CONTRIBUTION TRAIL
+---
 
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/output/github-contribution-grid-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/output/github-contribution-grid-snake.svg" />
-    <img alt="Animated GitHub contribution trail" src="https://raw.githubusercontent.com/CS-LX/CS-LX/output/github-contribution-grid-snake-dark.svg" />
-  </picture>
-</p>
+## 🎮 已发布游戏
+
+<table width="100%">
+  <thead>
+    <tr align="left">
+      <th width="30%">游戏图标 & 名称 (Icon & Name)</th>
+      <th width="20%">参与职位 (Roles)</th>
+      <th width="35%">赛事与荣誉 (Events & Awards)</th>
+      <th width="15%">链接 (Links)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td valign="middle">
+        <img src="https://raw.githubusercontent.com/CS-LX/CS-LX/main/Images/StencilMask.png" alt="StencilMask" width="50" height="50" style="border-radius:10px; vertical-align:middle;">
+        <strong> StencilMask</strong>
+      </td>
+      <td>程序<br><i>Programmer</i></td>
+      <td><strong>Global GameJam 2026</strong><br> 中国区 - 北京AF场 <b>最佳美术奖</b><br><i>[GGJ 2026] Best Art Award - Beijing AF Site</i></td>
+      <td>
+        <a href="https://www.taptap.cn/app/814328" target="_blank" style="background:#24DBB6;color:#000;padding:4px 8px;border-radius:4px;font-size:12px;text-decoration:none;">TapTap</a>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle">
+        <img src="https://raw.githubusercontent.com/CS-LX/CS-LX/main/Images/NullKitchenException.png" alt="有病才能当牛马" width="50" height="50" style="border-radius:10px; vertical-align:middle;">
+        <strong> 有病才能当牛马</strong>
+      </td>
+      <td>制作人 / 程序 / 美术<br><i>Producer / Programmer / Artist</i></td>
+      <td>2025 TapTap 聚光灯 21天挑战赛<br><b>全程参与奖</b><br><i>[TapTap 21-Day Challenge in 2025] - Participation Award</i></td>
+      <td>
+        <a href="https://www.taptap.cn/app/779871" target="_blank" style="background:#24DBB6;color:#000;padding:4px 8px;border-radius:4px;font-size:12px;text-decoration:none;">TapTap</a>
+        <a href="https://store.steampowered.com/app/4143170" target="_blank" style="background:#1b2838;color:#fff;padding:4px 8px;border-radius:4px;font-size:12px;text-decoration:none;">Steam</a>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle">
+        <img src="https://raw.githubusercontent.com/CS-LX/CS-LX/main/Images/Darkrune.png" alt="本关考验你听声辩位功夫" width="50" height="50" style="border-radius:10px; vertical-align:middle;">
+        <strong> 本关考验你听声辩位功夫</strong>
+      </td>
+      <td>制作人 / 主美 / 策划 / 程序<br><i>Lead Artist / Programmer / Designer</i></td>
+      <td>2025 TapTap 聚光灯 48h挑战赛<br> 武汉场 参赛作品<br><i>[TapTap Spotlight 48h Jam - Wuhan Site in 2025]</i></td>
+      <td>
+        <a href="https://www.taptap.cn/app/789796" target="_blank" style="background:#24DBB6;color:#000;padding:4px 8px;border-radius:4px;font-size:12px;text-decoration:none;">TapTap</a>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle">
+        <img src="https://raw.githubusercontent.com/CS-LX/CS-LX/main/Images/NeoFolder.png" alt="新建文件夹" width="50" height="50" style="border-radius:10px; vertical-align:middle;">
+        <strong> 新建文件夹 (New Folder)</strong>
+      </td>
+      <td>程序<br><i>Programmer</i></td>
+      <td>2025 TapTap 聚光灯 48h挑战赛<br> 成都场 参赛作品<br><i>[TapTap Spotlight 48h Jam - Chengdu Site in 2025]</i></td>
+      <td>
+        <a href="https://www.taptap.cn/app/800774" target="_blank" style="background:#24DBB6;color:#000;padding:4px 8px;border-radius:4px;font-size:12px;text-decoration:none;">TapTap</a>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle">
+        <img src="https://raw.githubusercontent.com/CS-LX/CS-LX/main/Images/Shadown.png" alt="影射-Shadown" width="50" height="50" style="border-radius:10px; vertical-align:middle;">
+        <strong> 影射-Shadown</strong>
+      </td>
+      <td>制作人<br><i>Producer</i></td>
+      <td>独立开发项目<br><i>Solo Project</i></td>
+      <td>
+        <a href="https://www.taptap.cn/app/793993" target="_blank" style="background:#24DBB6;color:#000;padding:4px 8px;border-radius:4px;font-size:12px;text-decoration:none;">TapTap</a>
+        <a href="https://store.steampowered.com/app/4499100/" target="_blank" style="background:#1b2838;color:#fff;padding:4px 8px;border-radius:4px;font-size:12px;text-decoration:none;">Steam</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+---
+
+## 🔧 技术栈
 
 <div align="center">
-  <sub>STAY CURIOUS · BUILD SYSTEMS · SHIP PLAYABLE THINGS</sub>
+
+**语言**
+
+<img src="https://skillicons.dev/icons?i=cs,cpp,c,python,lua&theme=dark&perline=8" alt="Languages"/>
+
+**工具 & 平台**
+
+<img src="https://skillicons.dev/icons?i=unity,git,github,blender,visualstudio,rider,stackoverflow,figma,ps,sentry&theme=dark&perline=8" alt="Tools"/>
+
+</div>
+
+---
+
+## 🐍 贡献贪吃蛇
+
+<!-- 需要 Actions 工作流生成 snake 动画，见 .github/workflows/snake.yml -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/output/github-contribution-grid-snake.svg">
+  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/CS-LX/CS-LX/output/github-contribution-grid-snake-dark.svg">
+</picture>
+
+---
+
+<div align="center">
+
+<sub>Built with ❤️ using</sub>
+<br/>
+<a href="https://github.com/anuraghazra/github-readme-stats">github-readme-stats</a> ·
+<a href="https://github.com/DenverCoder1/github-readme-streak-stats">streak-stats</a> ·
+<a href="https://github.com/Ashutosh00710/github-readme-activity-graph">activity-graph</a> ·
+<a href="https://github.com/ryo-ma/github-profile-trophy">profile-trophy</a> ·
+<a href="https://github.com/tandpfun/skill-icons">skill-icons</a>
+
+<br/><br/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,100:1f6feb&height=100&section=footer&text=Thanks%20for%20visiting!&fontSize=24&fontColor=c9d1d9&animation=twinkling"/>
+
 </div>
