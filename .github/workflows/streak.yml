@@ -2,7 +2,7 @@ name: Generate Streak Stats
 
 on:
   schedule:
-    - cron: "0 */12 * * *"
+    - cron: "31 */12 * * *"
   workflow_dispatch:
   push:
     branches: [main]
@@ -15,9 +15,9 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
 
-      - uses: DenverCoder1/github-readme-streak-stats@main
+      - uses: DenverCoder1/github-readme-streak-stats@f69662e10794e8757b12d3303a113a30b01c9bc9
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           path: profile/streak.svg

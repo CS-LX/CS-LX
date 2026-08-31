@@ -2,8 +2,12 @@ name: Generate Snake Animation
 
 on:
   schedule:
-    - cron: "0 */12 * * *"
+    - cron: "17 */12 * * *"
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/snake.yml"
 
 jobs:
   generate:
@@ -11,17 +15,24 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
 
-      - uses: Platane/snk@v3
+      - uses: Platane/snk@d8f6715049803e982ee5ff501b6b9b7d5deeb09b
         with:
           github_user_name: CS-LX
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-          snake_color: "58a6ff"
 
-      - uses: peaceiris/actions-gh-pages@v4
+      - name: Apply profile palette
+        run: |
+          find dist -name "*.svg" -print0 | xargs -0 sed -i \
+            -e 's/#00c647/#58a6ff/g' \
+            -e 's/#0f6d31/#1f6feb/g' \
+            -e 's/#034525/#0d3152/g' \
+            -e 's/#01311f/#0b253d/g'
+
+      - uses: peaceiris/actions-gh-pages@84c30a85c19949d7eee79c4ff27748b70285e453
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
