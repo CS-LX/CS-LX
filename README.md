@@ -109,6 +109,17 @@
   <tbody>
     <tr>
       <td valign="middle">
+        <img src="https://raw.githubusercontent.com/CS-LX/CS-LX/main/Images/SUPERANCHOR.png" alt="SUPERANCHOR" width="50" height="50" style="border-radius:10px; vertical-align:middle;">
+        <strong> SUPERANCHOR</strong>
+      </td>
+      <td>程序<br><i>Programmer</i></td>
+      <td>2026 中国 CiGA GameJam<br>广州万物破元站 <b>站点三等奖</b></td>
+      <td>
+        <a href="https://store.steampowered.com/app/4934990/SUPERANCHOR" target="_blank" style="background:#1b2838;color:#fff;padding:4px 8px;border-radius:4px;font-size:12px;text-decoration:none;">Steam</a>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle">
         <img src="https://raw.githubusercontent.com/CS-LX/CS-LX/main/Images/StencilMask.png" alt="StencilMask" width="50" height="50" style="border-radius:10px; vertical-align:middle;">
         <strong> StencilMask</strong>
       </td>
