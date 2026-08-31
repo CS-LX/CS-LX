@@ -24,6 +24,13 @@ const cardHeight = 225;
 const wideWidth = 1000;
 const wideHeight = 225;
 
+// Remix Icon paths, licensed under Apache-2.0.
+const remixIconPaths = {
+  star: "M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z",
+  fork: "M6 5C5.44772 5 5 5.44772 5 6C5 6.55228 5.44772 7 6 7C6.55228 7 7 6.55228 7 6C7 5.44772 6.55228 5 6 5ZM3 6C3 4.34315 4.34315 3 6 3C7.65685 3 9 4.34315 9 6C9 7.30622 8.16519 8.41746 7 8.82929V9C7 10.1046 7.89543 11 9 11H15C16.1046 11 17 10.1046 17 9V8.82929C15.8348 8.41746 15 7.30622 15 6C15 4.34315 16.3431 3 18 3C19.6569 3 21 4.34315 21 6C21 7.30622 20.1652 8.41746 19 8.82929V9C19 11.2091 17.2091 13 15 13H13V15.1707C14.1652 15.5825 15 16.6938 15 18C15 19.6569 13.6569 21 12 21C10.3431 21 9 19.6569 9 18C9 16.6938 9.83481 15.5825 11 15.1707V13H9C6.79086 13 5 11.2091 5 9V8.82929C3.83481 8.41746 3 7.30622 3 6ZM18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5ZM12 17C11.4477 17 11 17.4477 11 18C11 18.5523 11.4477 19 12 19C12.5523 19 13 18.5523 13 18C13 17.4477 12.5523 17 12 17Z",
+  code: "M24 12L18.3431 17.6569L16.9289 16.2426L21.1716 12L16.9289 7.75736L18.3431 6.34315L24 12ZM2.82843 12L7.07107 16.2426L5.65685 17.6569L0 12L5.65685 6.34315L7.07107 7.75736L2.82843 12ZM9.78845 21H7.66009L14.2116 3H16.3399L9.78845 21Z",
+};
+
 const headers = {
   Accept: "application/vnd.github+json",
   "User-Agent": "CS-LX-profile-generator",
@@ -217,6 +224,10 @@ function textLine(x, y, text, options = {}) {
   return `<text x="${x}" y="${y}" fill="${fill}" font-family="Segoe UI, Noto Sans, Arial, sans-serif" font-size="${size}" font-weight="${weight}" text-anchor="${anchor}">${escapeXml(text)}</text>`;
 }
 
+function remixIcon(name, x, y, size, fill = colors.accent) {
+  return `<path d="${remixIconPaths[name]}" transform="translate(${x} ${y}) scale(${(size / 24).toFixed(4)})" fill="${fill}"/>`;
+}
+
 function renderStats({ stars, totals }) {
   const metrics = [
     ["Total Stars Earned", stars],
@@ -325,12 +336,19 @@ function renderProject(repository) {
   const name = nameLines.map((line, index) => textLine(24, 78 + index * 22, line, { fill: colors.title, size: 18, weight: 700 })).join("\n");
   const descriptionY = 78 + nameLines.length * 22 + 10;
   const description = descriptionLines.map((line, index) => textLine(24, descriptionY + index * 18, line, { fill: colors.text, size: 13 })).join("\n");
-  const meta = [
-    `★ ${compactNumber(repository.stargazers_count)}`,
-    `⑂ ${compactNumber(repository.forks_count)}`,
-    repository.language,
-  ].filter(Boolean).join("   ");
-  return card(repository.name, `${name}\n${description}\n${textLine(24, 201, meta, { fill: colors.muted, size: 13 })}`);
+  const metadata = [
+    ["star", compactNumber(repository.stargazers_count)],
+    ["fork", compactNumber(repository.forks_count)],
+    ...(repository.language ? [["code", repository.language]] : []),
+  ];
+  let metadataX = 24;
+  const metadataSvg = metadata.map(([icon, value]) => {
+    const group = `${remixIcon(icon, metadataX, 186, 16, icon === "fork" ? colors.muted : colors.accent)}
+    ${textLine(metadataX + 23, 201, value, { fill: colors.text, size: 15, weight: 600 })}`;
+    metadataX += 23 + value.length * 8.5 + 26;
+    return group;
+  }).join("\n");
+  return card(repository.name, `${name}\n${description}\n${metadataSvg}`);
 }
 
 function renderTrophies(source) {
