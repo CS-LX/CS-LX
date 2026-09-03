@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- 打字机动画标题 -->
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&multiline=true&repeat=false&width=600&height=180&lines=%E9%92%85%E7%A6%BB-LX％20(Linxium);Game+Developer+%7C+Modder;Learning+C%2B%2B%2B%2B;Welcome+to+my+GitHub!" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&multiline=true&repeat=false&width=600&height=180&lines=%E9%92%85%E7%A6%BB-LX;Game+Developer+%7C+Modder;Learning+C%2B%2B%2B%2B;Welcome+to+my+GitHub!" alt="Typing SVG" />
 
 <!-- 个人简介徽章 -->
 [![Profile Views](https://komarev.com/ghpvc/?username=CS-LX&color=58a6ff&style=for-the-badge&label=PROFILE+VIEWS)](https://github.com/CS-LX)
