@@ -115,7 +115,7 @@
         <strong> 留给先行者的花束</strong>
       </td>
       <td>制作人<br><i>Producer</i></td>
-      <td><a href="https://www.taptap.cn/game-jam/risingstar03">TapTap 聚光灯 2026年制造新星丨 第3期作品</a><br><b>入围</b>，具体参见 <a href="https://www.taptap.cn/moment/849346918747210573">https://www.taptap.cn/moment/849346918747210573</a></td>
+      <td><a href="https://www.taptap.cn/game-jam/risingstar03">TapTap 聚光灯 2026年制造新星丨 第3期作品</a><br><b>入围</b>，<a href="https://www.taptap.cn/moment/849346918747210573">具体参见</a></td>
       <td>
         <a href="https://www.taptap.cn/app/911154" target="_blank" style="background:#24DBB6;color:#000;padding:4px 8px;border-radius:4px;font-size:12px;text-decoration:none;">TapTap</a>
       </td>
