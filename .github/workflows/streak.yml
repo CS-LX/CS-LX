@@ -36,6 +36,9 @@ jobs:
         run: node .github/scripts/generate-profile.mjs
 
       - name: Verify themes and retained information
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          VERIFY_GITHUB_MARKDOWN: "1"
         run: node --test .github/scripts/profile-themes.test.mjs
 
       - name: Commit profile SVGs and featured projects

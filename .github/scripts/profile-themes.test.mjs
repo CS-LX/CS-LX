@@ -11,6 +11,24 @@ const { games } = JSON.parse(await read(".github/data/games.json"));
 const textContent = (svg) => [...svg.matchAll(/<(?:text|title|desc)\b[^>]*>(.*?)<\/(?:text|title|desc)>/gs)].map((match) => match[1]);
 const embeddedTrophies = (svg) => Buffer.from(svg.match(/data:image\/svg\+xml;base64,([^"]+)/)[1], "base64").toString("utf8");
 
+function attribute(tag, name) {
+  return tag.match(new RegExp('(?:^|\\s)' + name + '="([^"]*)"'))?.[1].replaceAll("&amp;", "&");
+}
+
+function remotePictures(markup) {
+  return [...markup.matchAll(/<picture\b[^>]*>(.*?)<\/picture>/gs)].flatMap((match) => {
+    const img = match[1].match(/<img\b[^>]*>/)?.[0];
+    if (!img) return [];
+    const fallback = new URL(attribute(img, "data-canonical-src") ?? attribute(img, "src"), "https://github.com");
+    if (!["skillicons.dev", "capsule-render.vercel.app"].includes(fallback.hostname)) return [];
+    const sources = [...match[1].matchAll(/<source\b[^>]*>/g)].map(([tag]) => ({
+      media: attribute(tag, "media"),
+      url: new URL(attribute(tag, "data-canonical-src") ?? attribute(tag, "srcset")),
+    }));
+    return [{ fallback, sources }];
+  });
+}
+
 function luminance(hex) {
   const channels = hex.slice(1).match(/../g).map((part) => {
     const channel = parseInt(part, 16) / 255;
@@ -89,4 +107,79 @@ test("all local README image variants exist", async () => {
   const paths = new Set();
   for (const match of readme.matchAll(/(?:src|srcset)="(?:\.\/|https:\/\/raw\.githubusercontent\.com\/CS-LX\/CS-LX\/main\/)(profile\/[^"]+)"/g)) paths.add(match[1]);
   for (const path of paths) await access(resolve(root, path));
+});
+
+test("single-image srcsets encode commas in URL parameters", () => {
+  for (const [tag] of readme.matchAll(/<source\b[^>]*>/g)) {
+    const url = attribute(tag, "srcset");
+    // GitHub's image proxy splits raw commas into separate image candidates.
+    assert.ok(!url.includes(","), "Encode URL commas as %2C: " + url);
+  }
+});
+
+test("both skill-icon themes retain every icon and layout parameter", () => {
+  const pictures = remotePictures(readme).filter(({ fallback }) => fallback.hostname === "skillicons.dev");
+  assert.equal(pictures.length, 2);
+  const expected = ["cs,cpp,c,python,lua", "unity,git,github,blender,visualstudio,rider,stackoverflow,figma,ps,sentry"];
+  for (const [index, { fallback, sources }] of pictures.entries()) {
+    assert.equal(sources.length, 2);
+    assert.equal(fallback.searchParams.get("i"), expected[index]);
+    for (const theme of ["dark", "light"]) {
+      const source = sources.find(({ media }) => media === "(prefers-color-scheme: " + theme + ")");
+      assert.ok(source, "Missing " + theme + " skill icons");
+      assert.equal(source.url.searchParams.get("theme"), theme);
+      assert.equal(source.url.searchParams.get("i"), expected[index]);
+      assert.equal(source.url.searchParams.get("perline"), "8");
+    }
+  }
+});
+
+test("Thanks footer preserves its text, animation and theme-specific colors", () => {
+  const pictures = remotePictures(readme).filter(({ fallback }) => fallback.hostname === "capsule-render.vercel.app");
+  assert.equal(pictures.length, 1);
+  assert.equal(pictures[0].sources.length, 2);
+  for (const [theme, fontColor, color] of [
+    ["dark", "c9d1d9", "0:0d1117,100:1f6feb"],
+    ["light", "1f2328", "0:ffffff,100:80baff"],
+  ]) {
+    const source = pictures[0].sources.find(({ media }) => media === "(prefers-color-scheme: " + theme + ")");
+    assert.ok(source, "Missing " + theme + " footer");
+    const params = source.url.searchParams;
+    for (const [key, value] of Object.entries({
+      type: "waving", color, height: "100", section: "footer",
+      text: "Thanks for visiting!", fontSize: "24", fontColor, animation: "twinkling",
+    })) assert.equal(params.get(key), value, theme + " footer: " + key);
+  }
+});
+
+test("GitHub rendering keeps themed remote sources inside their pictures with complete URLs", {
+  skip: !process.env.VERIFY_GITHUB_MARKDOWN,
+}, async () => {
+  // Optional locally, enabled in CI: source-only tests cannot detect GitHub's
+  // srcset proxy truncation or Markdown splitting a picture after <br/>.
+  const token = process.env.GITHUB_TOKEN ?? process.env.GH_TOKEN;
+  assert.ok(token, "Markdown rendering check needs a GitHub token");
+  const response = await fetch("https://api.github.com/markdown", {
+    method: "POST",
+    headers: {
+      Authorization: "Bearer " + token,
+      Accept: "application/vnd.github+json",
+      "Content-Type": "application/json",
+      "X-GitHub-Api-Version": "2022-11-28",
+    },
+    body: JSON.stringify({ text: readme, mode: "gfm", context: "CS-LX/CS-LX" }),
+    signal: AbortSignal.timeout(30000),
+  });
+  assert.ok(response.ok, "GitHub Markdown API returned " + response.status);
+  const expected = remotePictures(readme);
+  const actual = remotePictures(await response.text());
+  assert.equal(actual.length, expected.length, "A themed picture lost its fallback image");
+  for (const [index, picture] of actual.entries()) {
+    assert.equal(picture.fallback.href, expected[index].fallback.href);
+    assert.deepEqual(
+      picture.sources.map(({ media, url }) => [media, url.href]),
+      expected[index].sources.map(({ media, url }) => [media, url.href]),
+      "GitHub split the picture or truncated a source URL",
+    );
+  }
 });

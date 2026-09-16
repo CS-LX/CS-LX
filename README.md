@@ -301,16 +301,16 @@
 **语言**
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=cs,cpp,c,python,lua&theme=dark&perline=8">
-  <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=cs,cpp,c,python,lua&theme=light&perline=8">
+  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=cs%2Ccpp%2Cc%2Cpython%2Clua&theme=dark&perline=8">
+  <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=cs%2Ccpp%2Cc%2Cpython%2Clua&theme=light&perline=8">
   <img src="https://skillicons.dev/icons?i=cs,cpp,c,python,lua&theme=light&perline=8" alt="Languages"/>
 </picture>
 
 **工具 & 平台**
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=unity,git,github,blender,visualstudio,rider,stackoverflow,figma,ps,sentry&theme=dark&perline=8">
-  <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=unity,git,github,blender,visualstudio,rider,stackoverflow,figma,ps,sentry&theme=light&perline=8">
+  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=unity%2Cgit%2Cgithub%2Cblender%2Cvisualstudio%2Crider%2Cstackoverflow%2Cfigma%2Cps%2Csentry&theme=dark&perline=8">
+  <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=unity%2Cgit%2Cgithub%2Cblender%2Cvisualstudio%2Crider%2Cstackoverflow%2Cfigma%2Cps%2Csentry&theme=light&perline=8">
   <img src="https://skillicons.dev/icons?i=unity,git,github,blender,visualstudio,rider,stackoverflow,figma,ps,sentry&theme=light&perline=8" alt="Tools"/>
 </picture>
 
@@ -343,9 +343,10 @@
 <a href="https://github.com/Platane/snk">snk</a>
 
 <br/><br/>
+
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,100:1f6feb&height=100&section=footer&text=Thanks%20for%20visiting!&fontSize=24&fontColor=c9d1d9&animation=twinkling">
-  <source media="(prefers-color-scheme: light)" srcset="https://capsule-render.vercel.app/api?type=waving&color=0:ffffff,100:80baff&height=100&section=footer&text=Thanks%20for%20visiting!&fontSize=24&fontColor=1f2328&animation=twinkling">
+  <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117%2C100:1f6feb&height=100&section=footer&text=Thanks%20for%20visiting!&fontSize=24&fontColor=c9d1d9&animation=twinkling">
+  <source media="(prefers-color-scheme: light)" srcset="https://capsule-render.vercel.app/api?type=waving&color=0:ffffff%2C100:80baff&height=100&section=footer&text=Thanks%20for%20visiting!&fontSize=24&fontColor=1f2328&animation=twinkling">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:ffffff,100:80baff&height=100&section=footer&text=Thanks%20for%20visiting!&fontSize=24&fontColor=1f2328&animation=twinkling"/>
 </picture>
 
