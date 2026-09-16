@@ -154,18 +154,14 @@ function card(game, assets, variant) {
 <defs>
   <linearGradient id="shade" x2="0" y2="1"><stop offset="0" stop-color="#111820" stop-opacity="0"/><stop offset=".67" stop-color="#111820" stop-opacity="0"/><stop offset="1" stop-color="#111820" stop-opacity=".38"/></linearGradient>
   <linearGradient id="fallback"><stop stop-color="#111820" stop-opacity=".1"/><stop offset="1" stop-color="#111820" stop-opacity=".67"/></linearGradient>
-  <clipPath id="panel"><rect x=".5" y=".5" width="${width - 1}" height="${height - 1}" rx="8"/></clipPath>
   <clipPath id="icon"><rect x="${padding}" y="${iconY}" width="${iconSize}" height="${iconSize}" rx="${mobile ? 12 : 16}"/></clipPath>
 </defs>
-<g clip-path="url(#panel)">
 <rect width="${width}" height="${height}" fill="#111820"/>
 ${background}<rect width="${width}" height="${heroHeight}" fill="url(#shade)"/>
 <rect x="${padding - 4}" y="${iconY - 4}" width="${iconSize + 8}" height="${iconSize + 8}" rx="${mobile ? 16 : 20}" fill="#111820"/>
 <image href="${assets.icon}" x="${padding}" y="${iconY}" width="${iconSize}" height="${iconSize}" clip-path="url(#icon)"/>
 ${title.svg}
 ${details}
-</g>
-<rect x=".5" y=".5" width="${width - 1}" height="${height - 1}" rx="8" fill="none" stroke="#30363d"/>
 </svg>\n`;
 }
 
@@ -175,15 +171,21 @@ function readmeSection(games, eol) {
     const image = `./profile/games/${game.id}`;
     // GitHub rewrites img src, but source srcset can remain relative after sanitizing.
     const rawImage = `https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/${game.id}`;
+    // GitHub strips custom CSS. A single native table cell owns the visible frame
+    // around both the artwork and real HTML links; links inside an img SVG are inert.
     lines.push(
-      `<p align="center">`,
-      `  <picture>`,
-      `    <source media="(max-width: 520px)" srcset="${rawImage}-mobile.svg">`,
-      `    <source media="(max-width: 900px)" srcset="${rawImage}-tablet.svg">`,
-      `    <img src="${image}-desktop.svg" alt="${xml(description(game))}" width="100%">`,
-      `  </picture>`,
-      `</p>`,
-      `<p>${game.links.map(({ label, url }) => `<a href="${xml(url)}">${xml(label)}</a>`).join(" &nbsp;·&nbsp; ")}</p>`,
+      `<table width="100%">`,
+      `  <tr>`,
+      `    <td>`,
+      `      <picture>`,
+      `        <source media="(max-width: 520px)" srcset="${rawImage}-mobile.svg">`,
+      `        <source media="(max-width: 900px)" srcset="${rawImage}-tablet.svg">`,
+      `        <img src="${image}-desktop.svg" alt="${xml(description(game))}" width="100%">`,
+      `      </picture>`,
+      `      <p>${game.links.map(({ label, url }) => `<a href="${xml(url)}">${xml(label)}</a>`).join(" &nbsp;·&nbsp; ")}</p>`,
+      `    </td>`,
+      `  </tr>`,
+      `</table>`,
       "",
     );
   }

@@ -100,68 +100,96 @@
 ## <img src="./profile/icons/gamepad.svg" width="24" height="24" alt="" style="vertical-align: -0.2em;" /> 已发布游戏
 
 <!-- games:start -->
-<p align="center">
-  <picture>
-    <source media="(max-width: 520px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/flower-mobile.svg">
-    <source media="(max-width: 900px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/flower-tablet.svg">
-    <img src="./profile/games/flower-desktop.svg" alt="留给先行者的花束；制作人；Producer；TapTap 聚光灯 2026年制造新星丨 第3期作品；入围" width="100%">
-  </picture>
-</p>
-<p><a href="https://www.taptap.cn/app/911154">TapTap</a> &nbsp;·&nbsp; <a href="https://www.taptap.cn/game-jam/risingstar03">赛事页面</a> &nbsp;·&nbsp; <a href="https://www.taptap.cn/moment/849346918747210573">具体参见</a></p>
+<table width="100%">
+  <tr>
+    <td>
+      <picture>
+        <source media="(max-width: 520px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/flower-mobile.svg">
+        <source media="(max-width: 900px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/flower-tablet.svg">
+        <img src="./profile/games/flower-desktop.svg" alt="留给先行者的花束；制作人；Producer；TapTap 聚光灯 2026年制造新星丨 第3期作品；入围" width="100%">
+      </picture>
+      <p><a href="https://www.taptap.cn/app/911154">TapTap</a> &nbsp;·&nbsp; <a href="https://www.taptap.cn/game-jam/risingstar03">赛事页面</a> &nbsp;·&nbsp; <a href="https://www.taptap.cn/moment/849346918747210573">具体参见</a></p>
+    </td>
+  </tr>
+</table>
 
-<p align="center">
-  <picture>
-    <source media="(max-width: 520px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/superanchor-mobile.svg">
-    <source media="(max-width: 900px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/superanchor-tablet.svg">
-    <img src="./profile/games/superanchor-desktop.svg" alt="SUPERANCHOR；程序；Programmer；2026 中国 CiGA GameJam；广州万物破元站；站点三等奖" width="100%">
-  </picture>
-</p>
-<p><a href="https://store.steampowered.com/app/4934990/SUPERANCHOR">Steam</a></p>
+<table width="100%">
+  <tr>
+    <td>
+      <picture>
+        <source media="(max-width: 520px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/superanchor-mobile.svg">
+        <source media="(max-width: 900px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/superanchor-tablet.svg">
+        <img src="./profile/games/superanchor-desktop.svg" alt="SUPERANCHOR；程序；Programmer；2026 中国 CiGA GameJam；广州万物破元站；站点三等奖" width="100%">
+      </picture>
+      <p><a href="https://store.steampowered.com/app/4934990/SUPERANCHOR">Steam</a></p>
+    </td>
+  </tr>
+</table>
 
-<p align="center">
-  <picture>
-    <source media="(max-width: 520px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/stencilmask-mobile.svg">
-    <source media="(max-width: 900px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/stencilmask-tablet.svg">
-    <img src="./profile/games/stencilmask-desktop.svg" alt="StencilMask；程序；Programmer；Global GameJam 2026；中国区 - 北京AF场；最佳美术奖；[GGJ 2026] Best Art Award - Beijing AF Site" width="100%">
-  </picture>
-</p>
-<p><a href="https://www.taptap.cn/app/814328">TapTap</a></p>
+<table width="100%">
+  <tr>
+    <td>
+      <picture>
+        <source media="(max-width: 520px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/stencilmask-mobile.svg">
+        <source media="(max-width: 900px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/stencilmask-tablet.svg">
+        <img src="./profile/games/stencilmask-desktop.svg" alt="StencilMask；程序；Programmer；Global GameJam 2026；中国区 - 北京AF场；最佳美术奖；[GGJ 2026] Best Art Award - Beijing AF Site" width="100%">
+      </picture>
+      <p><a href="https://www.taptap.cn/app/814328">TapTap</a></p>
+    </td>
+  </tr>
+</table>
 
-<p align="center">
-  <picture>
-    <source media="(max-width: 520px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/null-kitchen-mobile.svg">
-    <source media="(max-width: 900px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/null-kitchen-tablet.svg">
-    <img src="./profile/games/null-kitchen-desktop.svg" alt="有病才能当牛马；制作人 / 程序 / 美术；Producer / Programmer / Artist；2025 TapTap 聚光灯 21天挑战赛；全程参与奖；[TapTap 21-Day Challenge in 2025] - Participation Award" width="100%">
-  </picture>
-</p>
-<p><a href="https://www.taptap.cn/app/779871">TapTap</a> &nbsp;·&nbsp; <a href="https://store.steampowered.com/app/4143170">Steam</a></p>
+<table width="100%">
+  <tr>
+    <td>
+      <picture>
+        <source media="(max-width: 520px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/null-kitchen-mobile.svg">
+        <source media="(max-width: 900px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/null-kitchen-tablet.svg">
+        <img src="./profile/games/null-kitchen-desktop.svg" alt="有病才能当牛马；制作人 / 程序 / 美术；Producer / Programmer / Artist；2025 TapTap 聚光灯 21天挑战赛；全程参与奖；[TapTap 21-Day Challenge in 2025] - Participation Award" width="100%">
+      </picture>
+      <p><a href="https://www.taptap.cn/app/779871">TapTap</a> &nbsp;·&nbsp; <a href="https://store.steampowered.com/app/4143170">Steam</a></p>
+    </td>
+  </tr>
+</table>
 
-<p align="center">
-  <picture>
-    <source media="(max-width: 520px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/darkrune-mobile.svg">
-    <source media="(max-width: 900px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/darkrune-tablet.svg">
-    <img src="./profile/games/darkrune-desktop.svg" alt="本关考验你听声辩位功夫；制作人 / 主美 / 策划 / 程序；Lead Artist / Programmer / Designer；2025 TapTap 聚光灯 48h挑战赛；武汉场 参赛作品；[TapTap Spotlight 48h Jam - Wuhan Site in 2025]" width="100%">
-  </picture>
-</p>
-<p><a href="https://www.taptap.cn/app/789796">TapTap</a></p>
+<table width="100%">
+  <tr>
+    <td>
+      <picture>
+        <source media="(max-width: 520px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/darkrune-mobile.svg">
+        <source media="(max-width: 900px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/darkrune-tablet.svg">
+        <img src="./profile/games/darkrune-desktop.svg" alt="本关考验你听声辩位功夫；制作人 / 主美 / 策划 / 程序；Lead Artist / Programmer / Designer；2025 TapTap 聚光灯 48h挑战赛；武汉场 参赛作品；[TapTap Spotlight 48h Jam - Wuhan Site in 2025]" width="100%">
+      </picture>
+      <p><a href="https://www.taptap.cn/app/789796">TapTap</a></p>
+    </td>
+  </tr>
+</table>
 
-<p align="center">
-  <picture>
-    <source media="(max-width: 520px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/new-folder-mobile.svg">
-    <source media="(max-width: 900px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/new-folder-tablet.svg">
-    <img src="./profile/games/new-folder-desktop.svg" alt="新建文件夹 (New Folder)；程序；Programmer；2025 TapTap 聚光灯 48h挑战赛；成都场 参赛作品；[TapTap Spotlight 48h Jam - Chengdu Site in 2025]" width="100%">
-  </picture>
-</p>
-<p><a href="https://www.taptap.cn/app/800774">TapTap</a></p>
+<table width="100%">
+  <tr>
+    <td>
+      <picture>
+        <source media="(max-width: 520px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/new-folder-mobile.svg">
+        <source media="(max-width: 900px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/new-folder-tablet.svg">
+        <img src="./profile/games/new-folder-desktop.svg" alt="新建文件夹 (New Folder)；程序；Programmer；2025 TapTap 聚光灯 48h挑战赛；成都场 参赛作品；[TapTap Spotlight 48h Jam - Chengdu Site in 2025]" width="100%">
+      </picture>
+      <p><a href="https://www.taptap.cn/app/800774">TapTap</a></p>
+    </td>
+  </tr>
+</table>
 
-<p align="center">
-  <picture>
-    <source media="(max-width: 520px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/shadown-mobile.svg">
-    <source media="(max-width: 900px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/shadown-tablet.svg">
-    <img src="./profile/games/shadown-desktop.svg" alt="影射-Shadown；制作人；Producer；独立开发项目；Solo Project" width="100%">
-  </picture>
-</p>
-<p><a href="https://www.taptap.cn/app/793993">TapTap</a> &nbsp;·&nbsp; <a href="https://store.steampowered.com/app/4499100/">Steam</a></p>
+<table width="100%">
+  <tr>
+    <td>
+      <picture>
+        <source media="(max-width: 520px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/shadown-mobile.svg">
+        <source media="(max-width: 900px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/shadown-tablet.svg">
+        <img src="./profile/games/shadown-desktop.svg" alt="影射-Shadown；制作人；Producer；独立开发项目；Solo Project" width="100%">
+      </picture>
+      <p><a href="https://www.taptap.cn/app/793993">TapTap</a> &nbsp;·&nbsp; <a href="https://store.steampowered.com/app/4499100/">Steam</a></p>
+    </td>
+  </tr>
+</table>
 
 <!-- games:end -->
 

@@ -21,8 +21,12 @@ line breaks, but must contain exactly the same text as `event`. Similarly,
 
 The generator preserves all bilingual fields without truncation and writes
 three card sizes to `profile/games/`. README uses `<picture>` to select the
-layout; each platform, event, or announcement link stays outside the SVG as
-an individually clickable text link. Only the `games` marker block is updated.
+layout. Each card uses one native HTML table cell to frame both the artwork
+and its individually clickable platform, event, and announcement text links.
+The SVG has no outer border of its own, so the shared frame includes the link
+footer. Links stay in HTML because hyperlinks inside an image cannot be clicked
+individually. This layout does not rely on custom CSS stripped by GitHub.
+Only the `games` marker block is updated.
 
 The **Update Game Library** workflow runs on data, generator, or image changes,
 and can be dispatched manually. PR runs build and check without publishing.
