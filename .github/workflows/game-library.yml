@@ -1,0 +1,62 @@
+name: Update Game Library
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/game-library.yml"
+      - ".github/scripts/game-library/**"
+      - ".github/data/games.json"
+      - "Images/**"
+  pull_request:
+    paths:
+      - ".github/workflows/game-library.yml"
+      - ".github/scripts/game-library/**"
+      - ".github/data/games.json"
+      - "Images/**"
+
+# Both README writers share this group; a stats refresh cannot race this commit.
+concurrency:
+  group: profile-readme-${{ github.ref }}
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: .github/scripts/game-library/package-lock.json
+      - name: Install pinned image tooling
+        working-directory: .github/scripts/game-library
+        run: npm ci
+      - name: Generate game cards and README
+        working-directory: .github/scripts/game-library
+        run: npm run build
+      - name: Verify repeatable generation
+        working-directory: .github/scripts/game-library
+        run: npm run check
+      - name: Publish game library
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md profile/games
+          if git diff --staged --quiet; then
+            echo "Game library is up to date"
+          else
+            git commit -m "chore: update game library"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi

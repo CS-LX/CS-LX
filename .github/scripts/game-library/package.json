@@ -1,0 +1,12 @@
+{
+  "name": "cs-lx-game-library",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "build": "node generate.mjs",
+    "check": "node generate.mjs --check"
+  },
+  "dependencies": { "sharp": "0.35.4" }
+}

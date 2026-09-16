@@ -1,0 +1,132 @@
+{
+  "heroes": {
+    "rising-star": {
+      "image": "Images/heroes/rising-star.png",
+      "source": "https://img-tc.tapimg.com/market/images/9b21189c0177df2eb4842cd9d9a7349c.png"
+    },
+    "chengdu": {
+      "image": "Images/heroes/chengdu.png",
+      "source": "https://img-tc.tapimg.com/market/images/3916249e5c08eab439a8b5fc07d10275.png"
+    },
+    "wuhan": {
+      "image": "Images/heroes/wuhan.png",
+      "source": "https://img-tc.tapimg.com/market/images/8ce49a3eb34fb7430b99ff373678d719.png"
+    },
+    "challenge-21": {
+      "image": "Images/heroes/challenge-21.png",
+      "source": "https://img-tc.tapimg.com/market/images/b5261b5b4cb082f665c53defca217a65.png"
+    },
+    "ggj": {
+      "image": "Images/heroes/ggj.png",
+      "source": "https://img-tc.tapimg.com/market/images/dfb975f7ce47ca5d6398b5f359dba1f0.png"
+    },
+    "ciga": {
+      "image": "Images/heroes/ciga.jpg",
+      "source": "https://img-tc.tapimg.com/market/images/dd33de3829ee15927ae89bffac4f7533.jpg"
+    }
+  },
+  "games": [
+    {
+      "id": "flower",
+      "name": "留给先行者的花束",
+      "icon": "Images/FlowerForPioneers.svg",
+      "hero": "rising-star",
+      "roles": "制作人",
+      "rolesEn": "Producer",
+      "event": "TapTap 聚光灯 2026年制造新星丨 第3期作品",
+      "narrowEventLines": ["TapTap 聚光灯", "2026年制造新星丨 第3期作品"],
+      "award": "入围",
+      "links": [
+        { "label": "TapTap", "url": "https://www.taptap.cn/app/911154" },
+        { "label": "赛事页面", "url": "https://www.taptap.cn/game-jam/risingstar03" },
+        { "label": "具体参见", "url": "https://www.taptap.cn/moment/849346918747210573" }
+      ]
+    },
+    {
+      "id": "superanchor",
+      "name": "SUPERANCHOR",
+      "icon": "Images/SUPERANCHOR.png",
+      "hero": "ciga",
+      "roles": "程序",
+      "rolesEn": "Programmer",
+      "event": "2026 中国 CiGA GameJam",
+      "site": "广州万物破元站",
+      "award": "站点三等奖",
+      "links": [
+        { "label": "Steam", "url": "https://store.steampowered.com/app/4934990/SUPERANCHOR" }
+      ]
+    },
+    {
+      "id": "stencilmask",
+      "name": "StencilMask",
+      "icon": "Images/StencilMask.png",
+      "hero": "ggj",
+      "roles": "程序",
+      "rolesEn": "Programmer",
+      "event": "Global GameJam 2026",
+      "site": "中国区 - 北京AF场",
+      "award": "最佳美术奖",
+      "eventEn": "[GGJ 2026] Best Art Award - Beijing AF Site",
+      "links": [
+        { "label": "TapTap", "url": "https://www.taptap.cn/app/814328" }
+      ]
+    },
+    {
+      "id": "null-kitchen",
+      "name": "有病才能当牛马",
+      "icon": "Images/NullKitchenException.png",
+      "hero": "challenge-21",
+      "roles": "制作人 / 程序 / 美术",
+      "rolesEn": "Producer / Programmer / Artist",
+      "event": "2025 TapTap 聚光灯 21天挑战赛",
+      "award": "全程参与奖",
+      "eventEn": "[TapTap 21-Day Challenge in 2025] - Participation Award",
+      "links": [
+        { "label": "TapTap", "url": "https://www.taptap.cn/app/779871" },
+        { "label": "Steam", "url": "https://store.steampowered.com/app/4143170" }
+      ]
+    },
+    {
+      "id": "darkrune",
+      "name": "本关考验你听声辩位功夫",
+      "mobileNameLines": ["本关考验你", "听声辩位功夫"],
+      "icon": "Images/Darkrune.png",
+      "hero": "wuhan",
+      "roles": "制作人 / 主美 / 策划 / 程序",
+      "rolesEn": "Lead Artist / Programmer / Designer",
+      "event": "2025 TapTap 聚光灯 48h挑战赛",
+      "site": "武汉场 参赛作品",
+      "eventEn": "[TapTap Spotlight 48h Jam - Wuhan Site in 2025]",
+      "links": [
+        { "label": "TapTap", "url": "https://www.taptap.cn/app/789796" }
+      ]
+    },
+    {
+      "id": "new-folder",
+      "name": "新建文件夹 (New Folder)",
+      "icon": "Images/NeoFolder.png",
+      "hero": "chengdu",
+      "roles": "程序",
+      "rolesEn": "Programmer",
+      "event": "2025 TapTap 聚光灯 48h挑战赛",
+      "site": "成都场 参赛作品",
+      "eventEn": "[TapTap Spotlight 48h Jam - Chengdu Site in 2025]",
+      "links": [
+        { "label": "TapTap", "url": "https://www.taptap.cn/app/800774" }
+      ]
+    },
+    {
+      "id": "shadown",
+      "name": "影射-Shadown",
+      "icon": "Images/Shadown.png",
+      "roles": "制作人",
+      "rolesEn": "Producer",
+      "event": "独立开发项目",
+      "eventEn": "Solo Project",
+      "links": [
+        { "label": "TapTap", "url": "https://www.taptap.cn/app/793993" },
+        { "label": "Steam", "url": "https://store.steampowered.com/app/4499100/" }
+      ]
+    }
+  ]
+}
