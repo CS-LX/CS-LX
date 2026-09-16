@@ -7,12 +7,16 @@ on:
     paths:
       - ".github/workflows/game-library.yml"
       - ".github/scripts/game-library/**"
+      - ".github/scripts/profile-themes.mjs"
+      - ".github/scripts/profile-themes.test.mjs"
       - ".github/data/games.json"
       - "Images/**"
   pull_request:
     paths:
       - ".github/workflows/game-library.yml"
       - ".github/scripts/game-library/**"
+      - ".github/scripts/profile-themes.mjs"
+      - ".github/scripts/profile-themes.test.mjs"
       - ".github/data/games.json"
       - "Images/**"
 
@@ -47,6 +51,8 @@ jobs:
       - name: Verify repeatable generation
         working-directory: .github/scripts/game-library
         run: npm run check
+      - name: Verify themes, responsive layout and retained information
+        run: node --test .github/scripts/profile-themes.test.mjs
       - name: Publish game library
         if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
         run: |

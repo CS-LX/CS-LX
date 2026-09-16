@@ -1,24 +1,12 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
+import { profileThemes, themeSuffix, themeTrophySource } from "./profile-themes.mjs";
 
 const login = "CS-LX";
 const root = resolve(import.meta.dirname, "..", "..");
 const profileDir = resolve(root, "profile");
 const readmePath = resolve(root, "README.md");
 const token = process.env.GITHUB_TOKEN ?? process.env.GH_TOKEN;
-
-const colors = {
-  background: "#0d1117",
-  border: "#30363d",
-  divider: "#21262d",
-  text: "#c9d1d9",
-  muted: "#8b949e",
-  title: "#f0f6fc",
-  accent: "#58a6ff",
-  accentStrong: "#1f6feb",
-  accentDim: "#0d3152",
-  empty: "#161b22",
-};
 
 const cardWidth = 495;
 const cardHeight = 225;
@@ -201,162 +189,173 @@ function getStreaks(days) {
   return { current, longest };
 }
 
-function panel(width, height, title, body) {
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" role="img" aria-label="${escapeXml(title)}">
-  <rect width="${width}" height="${height}" rx="8" fill="${colors.background}"/>
-  <rect x="0.5" y="0.5" width="${width - 1}" height="${height - 1}" rx="7.5" fill="none" stroke="${colors.border}"/>
-  <path d="M8 8h3v27H8z" fill="${colors.accent}"/>
-  <text x="24" y="31" fill="${colors.title}" font-family="Segoe UI, Noto Sans, Arial, sans-serif" font-size="16" font-weight="700">${escapeXml(title)}</text>
-  <line x1="16" y1="46.5" x2="${width - 16}" y2="46.5" stroke="${colors.divider}"/>
-${body}
-</svg>`;
-}
+function createRenderer(theme) {
+  const colors = profileThemes[theme];
 
-function card(title, body) {
-  return panel(cardWidth, cardHeight, title, body);
-}
+  function panel(width, height, title, body) {
+    return `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" role="img" aria-label="${escapeXml(title)}">
+    <rect width="${width}" height="${height}" rx="8" fill="${colors.background}"/>
+    <rect x="0.5" y="0.5" width="${width - 1}" height="${height - 1}" rx="7.5" fill="none" stroke="${colors.border}"/>
+    <path d="M8 8h3v27H8z" fill="${colors.accent}"/>
+    <text x="24" y="31" fill="${colors.title}" font-family="Segoe UI, Noto Sans, Arial, sans-serif" font-size="16" font-weight="700">${escapeXml(title)}</text>
+    <line x1="16" y1="46.5" x2="${width - 16}" y2="46.5" stroke="${colors.divider}"/>
+  ${body}
+  </svg>`;
+  }
 
-function wideCard(title, body) {
-  return panel(wideWidth, wideHeight, title, body);
-}
+  function card(title, body) {
+    return panel(cardWidth, cardHeight, title, body);
+  }
 
-function textLine(x, y, text, options = {}) {
-  const { fill = colors.text, size = 12, weight = 400, anchor = "start" } = options;
-  return `<text x="${x}" y="${y}" fill="${fill}" font-family="Segoe UI, Noto Sans, Arial, sans-serif" font-size="${size}" font-weight="${weight}" text-anchor="${anchor}">${escapeXml(text)}</text>`;
-}
+  function wideCard(title, body) {
+    return panel(wideWidth, wideHeight, title, body);
+  }
 
-function remixIcon(name, x, y, size, fill = colors.accent) {
-  return `<path d="${remixIconPaths[name]}" transform="translate(${x} ${y}) scale(${(size / 24).toFixed(4)})" fill="${fill}"/>`;
-}
+  function textLine(x, y, text, options = {}) {
+    const { fill = colors.text, size = 12, weight = 400, anchor = "start" } = options;
+    return `<text x="${x}" y="${y}" fill="${fill}" font-family="Segoe UI, Noto Sans, Arial, sans-serif" font-size="${size}" font-weight="${weight}" text-anchor="${anchor}">${escapeXml(text)}</text>`;
+  }
 
-function renderStats({ stars, totals }) {
-  const metrics = [
-    ["Total Stars Earned", stars],
-    ["Total Commits", totals.commits],
-    ["Total PRs", totals.pullRequests],
-    ["Total Issues", totals.issues],
-  ];
-  const positions = [
-    [24, 91], [262, 91], [24, 166], [262, 166],
-  ];
-  const content = metrics.map(([label, value], index) => {
-    const [x, y] = positions[index];
-    return `${textLine(x, y, compactNumber(value), { fill: colors.accent, size: 28, weight: 700 })}
-    ${textLine(x, y + 23, label, { fill: colors.muted, size: 13 })}`;
-  }).join("\n");
-  return card("GitHub Stats", content);
-}
+  function remixIcon(name, x, y, size, fill = colors.accent) {
+    return `<path d="${remixIconPaths[name]}" transform="translate(${x} ${y}) scale(${(size / 24).toFixed(4)})" fill="${fill}"/>`;
+  }
 
-function rangeText(streak) {
-  if (!streak.start || !streak.end) return "";
-  return streak.start === streak.end ? shortDate(streak.start) : `${shortDate(streak.start)} – ${shortDate(streak.end)}`;
-}
+  function renderStats({ stars, totals }) {
+    const metrics = [
+      ["Total Stars Earned", stars],
+      ["Total Commits", totals.commits],
+      ["Total PRs", totals.pullRequests],
+      ["Total Issues", totals.issues],
+    ];
+    const positions = [
+      [24, 91], [262, 91], [24, 166], [262, 166],
+    ];
+    const content = metrics.map(([label, value], index) => {
+      const [x, y] = positions[index];
+      return `${textLine(x, y, compactNumber(value), { fill: colors.accent, size: 28, weight: 700 })}
+      ${textLine(x, y + 23, label, { fill: colors.muted, size: 13 })}`;
+    }).join("\n");
+    return card("GitHub Stats", content);
+  }
 
-function renderStreak(days, streaks) {
-  const total = [...days.values()].reduce((sum, value) => sum + value, 0);
-  const columns = [
-    [82.5, compactNumber(total), "Total Contributions", ""],
-    [247.5, compactNumber(streaks.current.length), "Current Streak", rangeText(streaks.current)],
-    [412.5, compactNumber(streaks.longest.length), "Longest Streak", rangeText(streaks.longest)],
-  ];
-  const dividers = `<line x1="165" y1="66" x2="165" y2="198" stroke="${colors.divider}"/>
-  <line x1="330" y1="66" x2="330" y2="198" stroke="${colors.divider}"/>`;
-  const content = `${dividers}\n${columns.map(([x, value, label, range]) => `
-    ${textLine(x, 105, value, { fill: colors.accent, size: 32, weight: 700, anchor: "middle" })}
-    ${textLine(x, 136, label, { fill: colors.text, size: 14, anchor: "middle" })}
-    ${textLine(x, 164, range, { fill: colors.muted, size: 12, anchor: "middle" })}`).join("\n")}`;
-  return card("GitHub Streak", content);
-}
+  function rangeText(streak) {
+    if (!streak.start || !streak.end) return "";
+    return streak.start === streak.end ? shortDate(streak.start) : `${shortDate(streak.start)} – ${shortDate(streak.end)}`;
+  }
 
-function renderLanguages(languages) {
-  const total = languages.reduce((sum, [, bytes]) => sum + bytes, 0) || 1;
-  const rows = languages.slice(0, 8).map(([name, bytes], index) => {
-    const y = 73 + index * 19;
-    const percent = (bytes / total) * 100;
-    return `${textLine(30, y, name, { size: 14 })}
-    <rect x="260" y="${y - 11}" width="620" height="9" rx="4.5" fill="${colors.empty}"/>
-    <rect x="260" y="${y - 11}" width="${Math.max(4, 620 * percent / 100).toFixed(1)}" height="9" rx="4.5" fill="${colors.accentStrong}"/>
-    ${textLine(950, y, `${percent.toFixed(1)}%`, { fill: colors.muted, size: 13, anchor: "end" })}`;
-  }).join("\n");
-  return wideCard("Top Languages", rows);
-}
+  function renderStreak(days, streaks) {
+    const total = [...days.values()].reduce((sum, value) => sum + value, 0);
+    const columns = [
+      [82.5, compactNumber(total), "Total Contributions", ""],
+      [247.5, compactNumber(streaks.current.length), "Current Streak", rangeText(streaks.current)],
+      [412.5, compactNumber(streaks.longest.length), "Longest Streak", rangeText(streaks.longest)],
+    ];
+    const dividers = `<line x1="165" y1="66" x2="165" y2="198" stroke="${colors.divider}"/>
+    <line x1="330" y1="66" x2="330" y2="198" stroke="${colors.divider}"/>`;
+    const content = `${dividers}\n${columns.map(([x, value, label, range]) => `
+      ${textLine(x, 105, value, { fill: colors.accent, size: 32, weight: 700, anchor: "middle" })}
+      ${textLine(x, 136, label, { fill: colors.text, size: 14, anchor: "middle" })}
+      ${textLine(x, 164, range, { fill: colors.muted, size: 12, anchor: "middle" })}`).join("\n")}`;
+    return card("GitHub Streak", content);
+  }
 
-function renderActivity(days) {
-  const latest = new Date(`${[...days.keys()].sort().at(-1)}T00:00:00Z`);
-  const sunday = addDays(latest, -latest.getUTCDay());
-  const weekStarts = Array.from({ length: 53 }, (_, index) => addDays(sunday, -7 * (52 - index)));
-  const values = weekStarts.flatMap((week) => Array.from({ length: 7 }, (_, day) => days.get(dateOnly(addDays(week, day))) ?? 0));
-  const nonZero = values.filter((value) => value > 0);
-  const max = Math.max(...nonZero, 1);
-  const shade = (value) => {
-    if (value === 0) return colors.empty;
-    const ratio = value / max;
-    if (ratio <= 0.25) return colors.accentDim;
-    if (ratio <= 0.5) return colors.accentStrong;
-    if (ratio <= 0.75) return "#388bfd";
-    return colors.accent;
-  };
-  const monthLabels = weekStarts.map((week, index) => {
-    const previous = index === 0 ? null : weekStarts[index - 1];
-    if (index !== 0 && week.getUTCMonth() === previous.getUTCMonth()) return "";
-    return textLine(60 + index * 17, 65, new Intl.DateTimeFormat("en", { month: "short", timeZone: "UTC" }).format(week), { fill: colors.muted, size: 12 });
-  }).join("\n");
-  const cells = weekStarts.flatMap((week, weekIndex) => Array.from({ length: 7 }, (_, dayIndex) => {
-    const value = days.get(dateOnly(addDays(week, dayIndex))) ?? 0;
-    return `<rect x="${60 + weekIndex * 17}" y="${77 + dayIndex * 17}" width="14" height="14" rx="2" fill="${shade(value)}"><title>${escapeXml(`${dateOnly(addDays(week, dayIndex))}: ${value} contributions`)}</title></rect>`;
-  })).join("\n");
-  return panel(wideWidth, 245, "Activity Graph", `${monthLabels}\n${cells}`);
-}
+  function renderLanguages(languages) {
+    const total = languages.reduce((sum, [, bytes]) => sum + bytes, 0) || 1;
+    const rows = languages.slice(0, 8).map(([name, bytes], index) => {
+      const y = 73 + index * 19;
+      const percent = (bytes / total) * 100;
+      return `${textLine(30, y, name, { size: 14 })}
+      <rect x="260" y="${y - 11}" width="620" height="9" rx="4.5" fill="${colors.empty}"/>
+      <rect x="260" y="${y - 11}" width="${Math.max(4, 620 * percent / 100).toFixed(1)}" height="9" rx="4.5" fill="${colors.accentStrong}"/>
+      ${textLine(950, y, `${percent.toFixed(1)}%`, { fill: colors.muted, size: 13, anchor: "end" })}`;
+    }).join("\n");
+    return wideCard("Top Languages", rows);
+  }
 
-function wrapText(value, maxLength, maxLines) {
-  if (!value) return [];
-  const words = value.split(/\s+/);
-  const lines = [];
-  let line = "";
-  for (const word of words) {
-    const candidate = line ? `${line} ${word}` : word;
-    if (candidate.length <= maxLength || !line) {
-      line = candidate;
-    } else {
-      lines.push(line);
-      line = word;
+  function renderActivity(days) {
+    const latest = new Date(`${[...days.keys()].sort().at(-1)}T00:00:00Z`);
+    const sunday = addDays(latest, -latest.getUTCDay());
+    const weekStarts = Array.from({ length: 53 }, (_, index) => addDays(sunday, -7 * (52 - index)));
+    const values = weekStarts.flatMap((week) => Array.from({ length: 7 }, (_, day) => days.get(dateOnly(addDays(week, day))) ?? 0));
+    const nonZero = values.filter((value) => value > 0);
+    const max = Math.max(...nonZero, 1);
+    const shade = (value) => {
+      if (value === 0) return colors.empty;
+      const ratio = value / max;
+      if (ratio <= 0.25) return colors.activity[0];
+      if (ratio <= 0.5) return colors.activity[1];
+      if (ratio <= 0.75) return colors.activity[2];
+      return colors.activity[3];
+    };
+    const monthLabels = weekStarts.map((week, index) => {
+      const previous = index === 0 ? null : weekStarts[index - 1];
+      if (index !== 0 && week.getUTCMonth() === previous.getUTCMonth()) return "";
+      return textLine(60 + index * 17, 65, new Intl.DateTimeFormat("en", { month: "short", timeZone: "UTC" }).format(week), { fill: colors.muted, size: 12 });
+    }).join("\n");
+    const cells = weekStarts.flatMap((week, weekIndex) => Array.from({ length: 7 }, (_, dayIndex) => {
+      const value = days.get(dateOnly(addDays(week, dayIndex))) ?? 0;
+      return `<rect x="${60 + weekIndex * 17}" y="${77 + dayIndex * 17}" width="14" height="14" rx="2" fill="${shade(value)}"><title>${escapeXml(`${dateOnly(addDays(week, dayIndex))}: ${value} contributions`)}</title></rect>`;
+    })).join("\n");
+    return panel(wideWidth, 245, "Activity Graph", `${monthLabels}\n${cells}`);
+  }
+
+  function wrapText(value, maxLength, maxLines) {
+    if (!value) return [];
+    const words = value.split(/\s+/);
+    const lines = [];
+    let line = "";
+    for (const word of words) {
+      const candidate = line ? `${line} ${word}` : word;
+      if (candidate.length <= maxLength || !line) {
+        line = candidate;
+      } else {
+        lines.push(line);
+        line = word;
+      }
+      if (lines.length === maxLines) break;
     }
-    if (lines.length === maxLines) break;
+    if (line && lines.length < maxLines) lines.push(line);
+    if (lines.join(" ").length < value.length) {
+      const last = lines.length - 1;
+      lines[last] = `${lines[last].slice(0, Math.max(0, maxLength - 1))}…`;
+    }
+    return lines;
   }
-  if (line && lines.length < maxLines) lines.push(line);
-  if (lines.join(" ").length < value.length) {
-    const last = lines.length - 1;
-    lines[last] = `${lines[last].slice(0, Math.max(0, maxLength - 1))}…`;
-  }
-  return lines;
-}
 
-function renderProject(repository) {
-  const nameLines = wrapText(repository.name, 38, 2);
-  const descriptionLines = wrapText(repository.description, 55, 2);
-  const name = nameLines.map((line, index) => textLine(24, 78 + index * 22, line, { fill: colors.title, size: 18, weight: 700 })).join("\n");
-  const descriptionY = 78 + nameLines.length * 22 + 10;
-  const description = descriptionLines.map((line, index) => textLine(24, descriptionY + index * 18, line, { fill: colors.text, size: 13 })).join("\n");
-  const metadata = [
-    ["star", compactNumber(repository.stargazers_count)],
-    ["fork", compactNumber(repository.forks_count)],
-    ...(repository.language ? [["code", repository.language]] : []),
-  ];
-  let metadataX = 24;
-  const metadataSvg = metadata.map(([icon, value]) => {
-    const group = `${remixIcon(icon, metadataX, 186, 16, icon === "fork" ? colors.muted : colors.accent)}
-    ${textLine(metadataX + 23, 201, value, { fill: colors.text, size: 15, weight: 600 })}`;
-    metadataX += 23 + value.length * 8.5 + 26;
-    return group;
-  }).join("\n");
-  return card(repository.name, `${name}\n${description}\n${metadataSvg}`);
+  function renderProject(repository) {
+    const nameLines = wrapText(repository.name, 38, 2);
+    const descriptionLines = wrapText(repository.description, 55, 2);
+    const name = nameLines.map((line, index) => textLine(24, 78 + index * 22, line, { fill: colors.title, size: 18, weight: 700 })).join("\n");
+    const descriptionY = 78 + nameLines.length * 22 + 10;
+    const description = descriptionLines.map((line, index) => textLine(24, descriptionY + index * 18, line, { fill: colors.text, size: 13 })).join("\n");
+    const metadata = [
+      ["star", compactNumber(repository.stargazers_count)],
+      ["fork", compactNumber(repository.forks_count)],
+      ...(repository.language ? [["code", repository.language]] : []),
+    ];
+    let metadataX = 24;
+    const metadataSvg = metadata.map(([icon, value]) => {
+      const group = `${remixIcon(icon, metadataX, 186, 16, icon === "fork" ? colors.muted : colors.accent)}
+      ${textLine(metadataX + 23, 201, value, { fill: colors.text, size: 15, weight: 600 })}`;
+      metadataX += 23 + value.length * 8.5 + 26;
+      return group;
+    }).join("\n");
+    return card(repository.name, `${name}\n${description}\n${metadataSvg}`);
+  }
+
+  return { renderStats, renderStreak, renderLanguages, renderActivity, renderProject,
+    renderTrophies: (source) => renderTrophies(themeTrophySource(source, theme), panel) };
 }
 
 function featuredProjectSection(repositories, eol) {
   const cells = repositories.map((repository) => [
     "    <td width=\"50%\" align=\"center\">",
     `      <a href=\"${repository.html_url}\">`,
-    `        <img src=\"./profile/projects/${repository.name}.svg\" alt=\"${repository.name}\" width=\"100%\"/>`,
+    "        <picture>",
+    `          <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/projects/${repository.name}.svg">`,
+    `          <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/projects/${repository.name}-light.svg">`,
+    `          <img src="./profile/projects/${repository.name}-light.svg" alt="${repository.name}" width="100%"/>`,
+    "        </picture>",
     "      </a>",
     "    </td>",
   ].join(eol));
@@ -390,7 +389,7 @@ async function writeFeaturedProjectSection(repositories) {
   if (updated !== readme) await writeFile(readmePath, updated, "utf8");
 }
 
-function renderTrophies(source) {
+function renderTrophies(source, panel) {
   const dimensions = source.match(/<svg\s+[^>]*width="(\d+)"\s+height="(\d+)"[^>]*>/s);
   if (!dimensions) throw new Error("Unable to read trophy SVG dimensions");
   const [width, height] = dimensions.slice(1).map(Number);
@@ -415,7 +414,11 @@ async function getTrophySource() {
     return await request(`https://github-profile-trophy-gamma.vercel.app/?username=${login}&theme=discord&no-frame=true&no-bg=true&margin-w=4&column=6`).then((response) => response.text());
   } catch (error) {
     console.warn(`Trophy refresh skipped: ${error.message}`);
-    return null;
+    // Reuse the previous snapshot, including when adding a new theme offline.
+    const existing = await readFile(resolve(profileDir, "trophies.svg"), "utf8");
+    const encoded = existing.match(/href="data:image\/svg\+xml;base64,([^"]+)"/)?.[1];
+    if (!encoded) throw new Error("No usable trophy snapshot is available");
+    return Buffer.from(encoded, "base64").toString("utf8");
   }
 }
 
@@ -450,15 +453,19 @@ async function main() {
     throw new Error("At least four public repositories are required for the featured project section");
   }
 
-  await Promise.all([
-    writeSvg(resolve(profileDir, "stats.svg"), renderStats({ stars, totals: history.totals })),
-    writeSvg(resolve(profileDir, "streak.svg"), renderStreak(history.days, streaks)),
-    writeSvg(resolve(profileDir, "languages.svg"), renderLanguages(languages)),
-    ...(trophySource ? [writeSvg(resolve(profileDir, "trophies.svg"), renderTrophies(trophySource))] : []),
-    writeSvg(resolve(profileDir, "activity.svg"), renderActivity(history.days)),
-    writeFeaturedProjectSection(featuredRepositories),
-    ...featuredRepositories.map((repository) => writeSvg(resolve(profileDir, "projects", `${repository.name}.svg`), renderProject(repository))),
-  ]);
+  for (const theme of Object.keys(profileThemes)) {
+    const { renderStats, renderStreak, renderLanguages, renderActivity, renderProject, renderTrophies } = createRenderer(theme);
+    const suffix = themeSuffix(theme);
+    await Promise.all([
+      writeSvg(resolve(profileDir, `stats${suffix}.svg`), renderStats({ stars, totals: history.totals })),
+      writeSvg(resolve(profileDir, `streak${suffix}.svg`), renderStreak(history.days, streaks)),
+      writeSvg(resolve(profileDir, `languages${suffix}.svg`), renderLanguages(languages)),
+      writeSvg(resolve(profileDir, `trophies${suffix}.svg`), renderTrophies(trophySource)),
+      writeSvg(resolve(profileDir, `activity${suffix}.svg`), renderActivity(history.days)),
+      ...featuredRepositories.map((repository) => writeSvg(resolve(profileDir, "projects", `${repository.name}${suffix}.svg`), renderProject(repository))),
+    ]);
+  }
+  await writeFeaturedProjectSection(featuredRepositories);
 }
 
 await main();

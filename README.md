@@ -37,29 +37,49 @@
 
 ## <img src="./profile/icons/bar-chart.svg" width="24" height="24" alt="" style="vertical-align: -0.2em;" /> GitHub 数据
 
-<!-- 统计卡片：统一深色主题 -->
+<!-- 统计卡片：跟随 GitHub 浅色 / 深色主题 -->
 <table align="center" width="100%">
   <tr>
     <td valign="top" width="50%" align="center">
-      <img src="./profile/stats.svg" alt="GitHub Stats" width="100%"/>
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/stats.svg">
+        <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/stats-light.svg">
+        <img src="./profile/stats-light.svg" alt="GitHub Stats" width="100%"/>
+      </picture>
     </td>
     <td valign="top" width="50%" align="center">
-      <img src="./profile/streak.svg" alt="GitHub Streak" width="100%"/>
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/streak.svg">
+        <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/streak-light.svg">
+        <img src="./profile/streak-light.svg" alt="GitHub Streak" width="100%"/>
+      </picture>
     </td>
   </tr>
 </table>
 
 <p align="center">
-  <img src="./profile/languages.svg" alt="Top Languages" width="100%"/>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/languages.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/languages-light.svg">
+    <img src="./profile/languages-light.svg" alt="Top Languages" width="100%"/>
+  </picture>
 </p>
 
 <p align="center">
-  <img src="./profile/trophies.svg" alt="GitHub Trophy" width="100%"/>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/trophies.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/trophies-light.svg">
+    <img src="./profile/trophies-light.svg" alt="GitHub Trophy" width="100%"/>
+  </picture>
 </p>
 
 <!-- 贡献活动图 -->
 <p align="center">
-  <img src="./profile/activity.svg" alt="Activity Graph" width="100%"/>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/activity.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/activity-light.svg">
+    <img src="./profile/activity-light.svg" alt="Activity Graph" width="100%"/>
+  </picture>
 </p>
 
 ---
@@ -71,24 +91,40 @@
   <tr>
     <td width="50%" align="center">
       <a href="https://github.com/CS-LX/CPURacer">
-        <img src="./profile/projects/CPURacer.svg" alt="CPURacer" width="100%"/>
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/projects/CPURacer.svg">
+          <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/projects/CPURacer-light.svg">
+          <img src="./profile/projects/CPURacer-light.svg" alt="CPURacer" width="100%"/>
+        </picture>
       </a>
     </td>
     <td width="50%" align="center">
       <a href="https://github.com/CS-LX/PowerfulWindSlickedBackHair_Winform">
-        <img src="./profile/projects/PowerfulWindSlickedBackHair_Winform.svg" alt="PowerfulWindSlickedBackHair_Winform" width="100%"/>
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/projects/PowerfulWindSlickedBackHair_Winform.svg">
+          <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/projects/PowerfulWindSlickedBackHair_Winform-light.svg">
+          <img src="./profile/projects/PowerfulWindSlickedBackHair_Winform-light.svg" alt="PowerfulWindSlickedBackHair_Winform" width="100%"/>
+        </picture>
       </a>
     </td>
   </tr>
   <tr>
     <td width="50%" align="center">
       <a href="https://github.com/CS-LX/RickAstley.exe-RinRorm.exe-">
-        <img src="./profile/projects/RickAstley.exe-RinRorm.exe-.svg" alt="RickAstley.exe-RinRorm.exe-" width="100%"/>
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/projects/RickAstley.exe-RinRorm.exe-.svg">
+          <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/projects/RickAstley.exe-RinRorm.exe--light.svg">
+          <img src="./profile/projects/RickAstley.exe-RinRorm.exe--light.svg" alt="RickAstley.exe-RinRorm.exe-" width="100%"/>
+        </picture>
       </a>
     </td>
     <td width="50%" align="center">
       <a href="https://github.com/CS-LX/Inhuman">
-        <img src="./profile/projects/Inhuman.svg" alt="Inhuman" width="100%"/>
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/projects/Inhuman.svg">
+          <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/projects/Inhuman-light.svg">
+          <img src="./profile/projects/Inhuman-light.svg" alt="Inhuman" width="100%"/>
+        </picture>
       </a>
     </td>
   </tr>
@@ -103,11 +139,20 @@
 <table width="100%">
   <tr>
     <td>
-      <picture>
-        <source media="(max-width: 520px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/flower-mobile.svg">
-        <source media="(max-width: 900px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/flower-tablet.svg">
-        <img src="./profile/games/flower-desktop.svg" alt="留给先行者的花束；制作人；Producer；TapTap 聚光灯 2026年制造新星丨 第3期作品；入围" width="100%">
-      </picture>
+      <a href="./profile/games/flower-desktop.svg#gh-dark-mode-only">
+        <picture>
+          <source media="(max-width: 520px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/flower-mobile.svg">
+          <source media="(max-width: 900px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/flower-tablet.svg">
+          <img src="./profile/games/flower-desktop.svg" alt="留给先行者的花束；制作人；Producer；TapTap 聚光灯 2026年制造新星丨 第3期作品；入围" width="100%">
+        </picture>
+      </a>
+      <a href="./profile/games/flower-desktop-light.svg#gh-light-mode-only">
+        <picture>
+          <source media="(max-width: 520px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/flower-mobile-light.svg">
+          <source media="(max-width: 900px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/flower-tablet-light.svg">
+          <img src="./profile/games/flower-desktop-light.svg" alt="留给先行者的花束；制作人；Producer；TapTap 聚光灯 2026年制造新星丨 第3期作品；入围" width="100%">
+        </picture>
+      </a>
       <p><a href="https://www.taptap.cn/app/911154">TapTap</a> &nbsp;·&nbsp; <a href="https://www.taptap.cn/game-jam/risingstar03">赛事页面</a> &nbsp;·&nbsp; <a href="https://www.taptap.cn/moment/849346918747210573">具体参见</a></p>
     </td>
   </tr>
@@ -116,11 +161,20 @@
 <table width="100%">
   <tr>
     <td>
-      <picture>
-        <source media="(max-width: 520px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/superanchor-mobile.svg">
-        <source media="(max-width: 900px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/superanchor-tablet.svg">
-        <img src="./profile/games/superanchor-desktop.svg" alt="SUPERANCHOR；程序；Programmer；2026 中国 CiGA GameJam；广州万物破元站；站点三等奖" width="100%">
-      </picture>
+      <a href="./profile/games/superanchor-desktop.svg#gh-dark-mode-only">
+        <picture>
+          <source media="(max-width: 520px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/superanchor-mobile.svg">
+          <source media="(max-width: 900px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/superanchor-tablet.svg">
+          <img src="./profile/games/superanchor-desktop.svg" alt="SUPERANCHOR；程序；Programmer；2026 中国 CiGA GameJam；广州万物破元站；站点三等奖" width="100%">
+        </picture>
+      </a>
+      <a href="./profile/games/superanchor-desktop-light.svg#gh-light-mode-only">
+        <picture>
+          <source media="(max-width: 520px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/superanchor-mobile-light.svg">
+          <source media="(max-width: 900px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/superanchor-tablet-light.svg">
+          <img src="./profile/games/superanchor-desktop-light.svg" alt="SUPERANCHOR；程序；Programmer；2026 中国 CiGA GameJam；广州万物破元站；站点三等奖" width="100%">
+        </picture>
+      </a>
       <p><a href="https://store.steampowered.com/app/4934990/SUPERANCHOR">Steam</a></p>
     </td>
   </tr>
@@ -129,11 +183,20 @@
 <table width="100%">
   <tr>
     <td>
-      <picture>
-        <source media="(max-width: 520px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/stencilmask-mobile.svg">
-        <source media="(max-width: 900px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/stencilmask-tablet.svg">
-        <img src="./profile/games/stencilmask-desktop.svg" alt="StencilMask；程序；Programmer；Global GameJam 2026；中国区 - 北京AF场；最佳美术奖；[GGJ 2026] Best Art Award - Beijing AF Site" width="100%">
-      </picture>
+      <a href="./profile/games/stencilmask-desktop.svg#gh-dark-mode-only">
+        <picture>
+          <source media="(max-width: 520px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/stencilmask-mobile.svg">
+          <source media="(max-width: 900px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/stencilmask-tablet.svg">
+          <img src="./profile/games/stencilmask-desktop.svg" alt="StencilMask；程序；Programmer；Global GameJam 2026；中国区 - 北京AF场；最佳美术奖；[GGJ 2026] Best Art Award - Beijing AF Site" width="100%">
+        </picture>
+      </a>
+      <a href="./profile/games/stencilmask-desktop-light.svg#gh-light-mode-only">
+        <picture>
+          <source media="(max-width: 520px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/stencilmask-mobile-light.svg">
+          <source media="(max-width: 900px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/stencilmask-tablet-light.svg">
+          <img src="./profile/games/stencilmask-desktop-light.svg" alt="StencilMask；程序；Programmer；Global GameJam 2026；中国区 - 北京AF场；最佳美术奖；[GGJ 2026] Best Art Award - Beijing AF Site" width="100%">
+        </picture>
+      </a>
       <p><a href="https://www.taptap.cn/app/814328">TapTap</a></p>
     </td>
   </tr>
@@ -142,11 +205,20 @@
 <table width="100%">
   <tr>
     <td>
-      <picture>
-        <source media="(max-width: 520px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/null-kitchen-mobile.svg">
-        <source media="(max-width: 900px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/null-kitchen-tablet.svg">
-        <img src="./profile/games/null-kitchen-desktop.svg" alt="有病才能当牛马；制作人 / 程序 / 美术；Producer / Programmer / Artist；2025 TapTap 聚光灯 21天挑战赛；全程参与奖；[TapTap 21-Day Challenge in 2025] - Participation Award" width="100%">
-      </picture>
+      <a href="./profile/games/null-kitchen-desktop.svg#gh-dark-mode-only">
+        <picture>
+          <source media="(max-width: 520px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/null-kitchen-mobile.svg">
+          <source media="(max-width: 900px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/null-kitchen-tablet.svg">
+          <img src="./profile/games/null-kitchen-desktop.svg" alt="有病才能当牛马；制作人 / 程序 / 美术；Producer / Programmer / Artist；2025 TapTap 聚光灯 21天挑战赛；全程参与奖；[TapTap 21-Day Challenge in 2025] - Participation Award" width="100%">
+        </picture>
+      </a>
+      <a href="./profile/games/null-kitchen-desktop-light.svg#gh-light-mode-only">
+        <picture>
+          <source media="(max-width: 520px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/null-kitchen-mobile-light.svg">
+          <source media="(max-width: 900px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/null-kitchen-tablet-light.svg">
+          <img src="./profile/games/null-kitchen-desktop-light.svg" alt="有病才能当牛马；制作人 / 程序 / 美术；Producer / Programmer / Artist；2025 TapTap 聚光灯 21天挑战赛；全程参与奖；[TapTap 21-Day Challenge in 2025] - Participation Award" width="100%">
+        </picture>
+      </a>
       <p><a href="https://www.taptap.cn/app/779871">TapTap</a> &nbsp;·&nbsp; <a href="https://store.steampowered.com/app/4143170">Steam</a></p>
     </td>
   </tr>
@@ -155,11 +227,20 @@
 <table width="100%">
   <tr>
     <td>
-      <picture>
-        <source media="(max-width: 520px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/darkrune-mobile.svg">
-        <source media="(max-width: 900px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/darkrune-tablet.svg">
-        <img src="./profile/games/darkrune-desktop.svg" alt="本关考验你听声辩位功夫；制作人 / 主美 / 策划 / 程序；Lead Artist / Programmer / Designer；2025 TapTap 聚光灯 48h挑战赛；武汉场 参赛作品；[TapTap Spotlight 48h Jam - Wuhan Site in 2025]" width="100%">
-      </picture>
+      <a href="./profile/games/darkrune-desktop.svg#gh-dark-mode-only">
+        <picture>
+          <source media="(max-width: 520px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/darkrune-mobile.svg">
+          <source media="(max-width: 900px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/darkrune-tablet.svg">
+          <img src="./profile/games/darkrune-desktop.svg" alt="本关考验你听声辩位功夫；制作人 / 主美 / 策划 / 程序；Lead Artist / Programmer / Designer；2025 TapTap 聚光灯 48h挑战赛；武汉场 参赛作品；[TapTap Spotlight 48h Jam - Wuhan Site in 2025]" width="100%">
+        </picture>
+      </a>
+      <a href="./profile/games/darkrune-desktop-light.svg#gh-light-mode-only">
+        <picture>
+          <source media="(max-width: 520px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/darkrune-mobile-light.svg">
+          <source media="(max-width: 900px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/darkrune-tablet-light.svg">
+          <img src="./profile/games/darkrune-desktop-light.svg" alt="本关考验你听声辩位功夫；制作人 / 主美 / 策划 / 程序；Lead Artist / Programmer / Designer；2025 TapTap 聚光灯 48h挑战赛；武汉场 参赛作品；[TapTap Spotlight 48h Jam - Wuhan Site in 2025]" width="100%">
+        </picture>
+      </a>
       <p><a href="https://www.taptap.cn/app/789796">TapTap</a></p>
     </td>
   </tr>
@@ -168,11 +249,20 @@
 <table width="100%">
   <tr>
     <td>
-      <picture>
-        <source media="(max-width: 520px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/new-folder-mobile.svg">
-        <source media="(max-width: 900px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/new-folder-tablet.svg">
-        <img src="./profile/games/new-folder-desktop.svg" alt="新建文件夹 (New Folder)；程序；Programmer；2025 TapTap 聚光灯 48h挑战赛；成都场 参赛作品；[TapTap Spotlight 48h Jam - Chengdu Site in 2025]" width="100%">
-      </picture>
+      <a href="./profile/games/new-folder-desktop.svg#gh-dark-mode-only">
+        <picture>
+          <source media="(max-width: 520px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/new-folder-mobile.svg">
+          <source media="(max-width: 900px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/new-folder-tablet.svg">
+          <img src="./profile/games/new-folder-desktop.svg" alt="新建文件夹 (New Folder)；程序；Programmer；2025 TapTap 聚光灯 48h挑战赛；成都场 参赛作品；[TapTap Spotlight 48h Jam - Chengdu Site in 2025]" width="100%">
+        </picture>
+      </a>
+      <a href="./profile/games/new-folder-desktop-light.svg#gh-light-mode-only">
+        <picture>
+          <source media="(max-width: 520px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/new-folder-mobile-light.svg">
+          <source media="(max-width: 900px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/new-folder-tablet-light.svg">
+          <img src="./profile/games/new-folder-desktop-light.svg" alt="新建文件夹 (New Folder)；程序；Programmer；2025 TapTap 聚光灯 48h挑战赛；成都场 参赛作品；[TapTap Spotlight 48h Jam - Chengdu Site in 2025]" width="100%">
+        </picture>
+      </a>
       <p><a href="https://www.taptap.cn/app/800774">TapTap</a></p>
     </td>
   </tr>
@@ -181,11 +271,20 @@
 <table width="100%">
   <tr>
     <td>
-      <picture>
-        <source media="(max-width: 520px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/shadown-mobile.svg">
-        <source media="(max-width: 900px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/shadown-tablet.svg">
-        <img src="./profile/games/shadown-desktop.svg" alt="影射-Shadown；制作人；Producer；独立开发项目；Solo Project" width="100%">
-      </picture>
+      <a href="./profile/games/shadown-desktop.svg#gh-dark-mode-only">
+        <picture>
+          <source media="(max-width: 520px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/shadown-mobile.svg">
+          <source media="(max-width: 900px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/shadown-tablet.svg">
+          <img src="./profile/games/shadown-desktop.svg" alt="影射-Shadown；制作人；Producer；独立开发项目；Solo Project" width="100%">
+        </picture>
+      </a>
+      <a href="./profile/games/shadown-desktop-light.svg#gh-light-mode-only">
+        <picture>
+          <source media="(max-width: 520px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/shadown-mobile-light.svg">
+          <source media="(max-width: 900px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/shadown-tablet-light.svg">
+          <img src="./profile/games/shadown-desktop-light.svg" alt="影射-Shadown；制作人；Producer；独立开发项目；Solo Project" width="100%">
+        </picture>
+      </a>
       <p><a href="https://www.taptap.cn/app/793993">TapTap</a> &nbsp;·&nbsp; <a href="https://store.steampowered.com/app/4499100/">Steam</a></p>
     </td>
   </tr>
@@ -201,11 +300,19 @@
 
 **语言**
 
-<img src="https://skillicons.dev/icons?i=cs,cpp,c,python,lua&theme=dark&perline=8" alt="Languages"/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=cs,cpp,c,python,lua&theme=dark&perline=8">
+  <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=cs,cpp,c,python,lua&theme=light&perline=8">
+  <img src="https://skillicons.dev/icons?i=cs,cpp,c,python,lua&theme=light&perline=8" alt="Languages"/>
+</picture>
 
 **工具 & 平台**
 
-<img src="https://skillicons.dev/icons?i=unity,git,github,blender,visualstudio,rider,stackoverflow,figma,ps,sentry&theme=dark&perline=8" alt="Tools"/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=unity,git,github,blender,visualstudio,rider,stackoverflow,figma,ps,sentry&theme=dark&perline=8">
+  <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=unity,git,github,blender,visualstudio,rider,stackoverflow,figma,ps,sentry&theme=light&perline=8">
+  <img src="https://skillicons.dev/icons?i=unity,git,github,blender,visualstudio,rider,stackoverflow,figma,ps,sentry&theme=light&perline=8" alt="Tools"/>
+</picture>
 
 </div>
 
@@ -236,6 +343,10 @@
 <a href="https://github.com/Platane/snk">snk</a>
 
 <br/><br/>
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,100:1f6feb&height=100&section=footer&text=Thanks%20for%20visiting!&fontSize=24&fontColor=c9d1d9&animation=twinkling"/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,100:1f6feb&height=100&section=footer&text=Thanks%20for%20visiting!&fontSize=24&fontColor=c9d1d9&animation=twinkling">
+  <source media="(prefers-color-scheme: light)" srcset="https://capsule-render.vercel.app/api?type=waving&color=0:ffffff,100:80baff&height=100&section=footer&text=Thanks%20for%20visiting!&fontSize=24&fontColor=1f2328&animation=twinkling">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:ffffff,100:80baff&height=100&section=footer&text=Thanks%20for%20visiting!&fontSize=24&fontColor=1f2328&animation=twinkling"/>
+</picture>
 
 </div>
