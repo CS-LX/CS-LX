@@ -2,6 +2,9 @@ import sharp from "sharp";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { dirname, resolve, sep } from "node:path";
 
+// Stable pixels and PNG encoding across local Windows and the Linux CI runner.
+sharp.simd(false);
+
 const root = resolve(import.meta.dirname, "../../..");
 const check = process.argv.includes("--check");
 const variants = ["desktop", "tablet", "mobile"];
@@ -201,7 +204,7 @@ async function generate() {
   for (const game of model.games) {
     const input = assetPath(game.icon);
     const assets = {
-      icon: dataUri(await sharp(input).resize(112, 112, { fit: "contain", background: "#111820" }).png({ palette: true, colours: 128 }).toBuffer(), "image/png"),
+      icon: dataUri(await sharp(input).resize(112, 112, { fit: "contain", background: "#111820" }).png({ compressionLevel: 9, adaptiveFiltering: false }).toBuffer(), "image/png"),
     };
     if (game.hero) {
       if (!heroCache.has(game.hero)) {
