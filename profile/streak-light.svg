@@ -7,13 +7,13 @@
   <line x1="165" y1="66" x2="165" y2="198" stroke="#d8dee4"/>
     <line x1="330" y1="66" x2="330" y2="198" stroke="#d8dee4"/>
 
-      <text x="82.5" y="105" fill="#0969da" font-family="Segoe UI, Noto Sans, Arial, sans-serif" font-size="32" font-weight="700" text-anchor="middle">1,256</text>
+      <text x="82.5" y="105" fill="#0969da" font-family="Segoe UI, Noto Sans, Arial, sans-serif" font-size="32" font-weight="700" text-anchor="middle">1,258</text>
       <text x="82.5" y="136" fill="#1f2328" font-family="Segoe UI, Noto Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle">Total Contributions</text>
       <text x="82.5" y="164" fill="#59636e" font-family="Segoe UI, Noto Sans, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="middle"></text>
 
-      <text x="247.5" y="105" fill="#0969da" font-family="Segoe UI, Noto Sans, Arial, sans-serif" font-size="32" font-weight="700" text-anchor="middle">2</text>
+      <text x="247.5" y="105" fill="#0969da" font-family="Segoe UI, Noto Sans, Arial, sans-serif" font-size="32" font-weight="700" text-anchor="middle">3</text>
       <text x="247.5" y="136" fill="#1f2328" font-family="Segoe UI, Noto Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle">Current Streak</text>
-      <text x="247.5" y="164" fill="#59636e" font-family="Segoe UI, Noto Sans, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="middle">Sep 19 – Sep 20</text>
+      <text x="247.5" y="164" fill="#59636e" font-family="Segoe UI, Noto Sans, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="middle">Sep 19 – Sep 21</text>
 
       <text x="412.5" y="105" fill="#0969da" font-family="Segoe UI, Noto Sans, Arial, sans-serif" font-size="32" font-weight="700" text-anchor="middle">26</text>
       <text x="412.5" y="136" fill="#1f2328" font-family="Segoe UI, Noto Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle">Longest Streak</text>
