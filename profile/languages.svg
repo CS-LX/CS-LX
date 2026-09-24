@@ -10,7 +10,7 @@
       <text x="950" y="73" fill="#8b949e" font-family="Segoe UI, Noto Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="end">42.0%</text>
 <text x="30" y="92" fill="#c9d1d9" font-family="Segoe UI, Noto Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start">Lua</text>
       <rect x="260" y="81" width="620" height="9" rx="4.5" fill="#161b22"/>
-      <rect x="260" y="81" width="182.3" height="9" rx="4.5" fill="#1f6feb"/>
+      <rect x="260" y="81" width="182.4" height="9" rx="4.5" fill="#1f6feb"/>
       <text x="950" y="92" fill="#8b949e" font-family="Segoe UI, Noto Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="end">29.4%</text>
 <text x="30" y="111" fill="#c9d1d9" font-family="Segoe UI, Noto Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start">C++</text>
       <rect x="260" y="100" width="620" height="9" rx="4.5" fill="#161b22"/>
@@ -23,7 +23,7 @@
 <text x="30" y="149" fill="#c9d1d9" font-family="Segoe UI, Noto Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start">C</text>
       <rect x="260" y="138" width="620" height="9" rx="4.5" fill="#161b22"/>
       <rect x="260" y="138" width="25.1" height="9" rx="4.5" fill="#1f6feb"/>
-      <text x="950" y="149" fill="#8b949e" font-family="Segoe UI, Noto Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="end">4.1%</text>
+      <text x="950" y="149" fill="#8b949e" font-family="Segoe UI, Noto Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="end">4.0%</text>
 <text x="30" y="168" fill="#c9d1d9" font-family="Segoe UI, Noto Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start">HTML</text>
       <rect x="260" y="157" width="620" height="9" rx="4.5" fill="#161b22"/>
       <rect x="260" y="157" width="6.8" height="9" rx="4.5" fill="#1f6feb"/>
