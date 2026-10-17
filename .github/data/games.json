@@ -52,6 +52,7 @@
       "event": "2026 中国 CiGA GameJam",
       "site": "广州万物破元站",
       "award": "站点三等奖",
+      "additionalAwards": ["2026 indiePlay 最佳GameJam入围"],
       "links": [
         { "label": "Steam", "url": "https://store.steampowered.com/app/4934990/SUPERANCHOR" }
       ]

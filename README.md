@@ -165,14 +165,14 @@
         <picture>
           <source media="(max-width: 520px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/superanchor-mobile.svg">
           <source media="(max-width: 900px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/superanchor-tablet.svg">
-          <img src="./profile/games/superanchor-desktop.svg" alt="SUPERANCHOR；程序；Programmer；2026 中国 CiGA GameJam；广州万物破元站；站点三等奖" width="100%">
+          <img src="./profile/games/superanchor-desktop.svg" alt="SUPERANCHOR；程序；Programmer；2026 中国 CiGA GameJam；广州万物破元站；站点三等奖；2026 indiePlay 最佳GameJam入围" width="100%">
         </picture>
       </a>
       <a href="./profile/games/superanchor-desktop-light.svg#gh-light-mode-only">
         <picture>
           <source media="(max-width: 520px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/superanchor-mobile-light.svg">
           <source media="(max-width: 900px)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/games/superanchor-tablet-light.svg">
-          <img src="./profile/games/superanchor-desktop-light.svg" alt="SUPERANCHOR；程序；Programmer；2026 中国 CiGA GameJam；广州万物破元站；站点三等奖" width="100%">
+          <img src="./profile/games/superanchor-desktop-light.svg" alt="SUPERANCHOR；程序；Programmer；2026 中国 CiGA GameJam；广州万物破元站；站点三等奖；2026 indiePlay 最佳GameJam入围" width="100%">
         </picture>
       </a>
       <p><a href="https://store.steampowered.com/app/4934990/SUPERANCHOR">Steam</a></p>

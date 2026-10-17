@@ -43,6 +43,10 @@ function validate({ games, heroes }) {
     if (game.mobileNameLines && normalize(game.mobileNameLines.join(" ")) !== normalize(game.name)) {
       throw new Error(`${game.id}: mobile title layout changes its text`);
     }
+    if (game.additionalAwards !== undefined && (!Array.isArray(game.additionalAwards)
+      || game.additionalAwards.some((award) => typeof award !== "string" || !award.trim()))) {
+      throw new Error(`${game.id}: additionalAwards must be a list of non-empty strings`);
+    }
     if (!Array.isArray(game.links) || game.links.length === 0) throw new Error(`${game.id}: missing links`);
     for (const link of game.links) {
       if (!link.label?.trim() || new URL(link.url).protocol !== "https:") throw new Error(`${game.id}: invalid link`);
@@ -94,7 +98,7 @@ async function averageColor(input) {
 }
 
 function description(game) {
-  return [game.name, game.roles, game.rolesEn, game.event, game.site, game.award, game.eventEn].filter(Boolean).join("；");
+  return [game.name, game.roles, game.rolesEn, game.event, game.site, game.award, game.eventEn, ...(game.additionalAwards ?? [])].filter(Boolean).join("；");
 }
 
 function card(game, assets, variant, colors) {
@@ -118,6 +122,7 @@ function card(game, assets, variant, colors) {
       [game.site, 17, colors.secondary, 400, 25, 0],
       [game.award, 18, colors.accent, 700, 27, 0],
       [game.eventEn, 15, colors.muted, 400, 23, 0],
+      ...(game.additionalAwards ?? []).map((award) => [award, 18, colors.accent, 700, 27, 0]),
     ]) {
       if (!value) continue;
       const block = multiline(padding, y, value, width - padding * 2, size, color, weight, lineHeight);
@@ -141,6 +146,11 @@ function card(game, assets, variant, colors) {
       const english = multiline(eventX, y, game.eventEn, width - eventX - padding, englishSize, colors.muted, 400, 24);
       details += english.svg;
       y += english.height;
+    }
+    for (const award of game.additionalAwards ?? []) {
+      const honor = multiline(eventX, y, award, width - eventX - padding, bodySize, colors.accent, 600, 27);
+      details += honor.svg;
+      y += honor.height;
     }
     y = Math.max(y, detailY + role.height + roleEn.height + 12);
     details += `<path d="M${eventX - 24} ${detailY - 18}V${y - 9}" stroke="${colors.divider}"/>`;

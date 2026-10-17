@@ -76,6 +76,23 @@ test("trophy recoloring leaves medal artwork and scores untouched", () => {
   assert.equal(themeTrophySource(source, "dark"), source);
 });
 
+test("additional game awards remain visible alongside the original award in every layout", async () => {
+  const xml = (value) => value.replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;").replaceAll("'", "&apos;");
+  const normalize = (value) => value.replace(/\s+/gu, "");
+  for (const game of games.filter((entry) => entry.additionalAwards?.length)) {
+    for (const variant of ["desktop", "tablet", "mobile"]) {
+      for (const suffix of ["", "-light"]) {
+        const svg = await read("profile/games/" + game.id + "-" + variant + suffix + ".svg");
+        // Check painted text, not just the accessible title/description.
+        const visible = normalize([...svg.matchAll(/<text\b[^>]*>(.*?)<\/text>/gs)].map((match) => match[1]).join(""));
+        for (const award of [game.award, ...game.additionalAwards].filter(Boolean)) {
+          assert.ok(visible.includes(normalize(xml(award))), game.id + ": missing award in " + variant + suffix);
+        }
+      }
+    }
+  }
+});
+
 test("responsive game artwork and all original links share one frame", () => {
   const section = readme.split("<!-- games:start -->")[1].split("<!-- games:end -->")[0];
   const tables = [...section.matchAll(/<table\b[^>]*>.*?<\/table>/gs)].map((match) => match[0]);
