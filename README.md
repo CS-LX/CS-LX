@@ -119,11 +119,11 @@
       </a>
     </td>
     <td width="50%" align="center">
-      <a href="https://github.com/CS-LX/Inhuman">
+      <a href="https://github.com/CS-LX/SuperCalc">
         <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/projects/Inhuman.svg">
-          <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/projects/Inhuman-light.svg">
-          <img src="./profile/projects/Inhuman-light.svg" alt="Inhuman" width="100%"/>
+          <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/projects/SuperCalc.svg">
+          <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/CS-LX/CS-LX/main/profile/projects/SuperCalc-light.svg">
+          <img src="./profile/projects/SuperCalc-light.svg" alt="SuperCalc" width="100%"/>
         </picture>
       </a>
     </td>
