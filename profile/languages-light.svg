@@ -6,34 +6,34 @@
     <line x1="16" y1="46.5" x2="984" y2="46.5" stroke="#d8dee4"/>
   <text x="30" y="73" fill="#1f2328" font-family="Segoe UI, Noto Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start">C#</text>
       <rect x="260" y="62" width="620" height="9" rx="4.5" fill="#eff2f5"/>
-      <rect x="260" y="62" width="247.7" height="9" rx="4.5" fill="#0969da"/>
-      <text x="950" y="73" fill="#59636e" font-family="Segoe UI, Noto Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="end">39.9%</text>
+      <rect x="260" y="62" width="246.0" height="9" rx="4.5" fill="#0969da"/>
+      <text x="950" y="73" fill="#59636e" font-family="Segoe UI, Noto Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="end">39.7%</text>
 <text x="30" y="92" fill="#1f2328" font-family="Segoe UI, Noto Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start">Lua</text>
       <rect x="260" y="81" width="620" height="9" rx="4.5" fill="#eff2f5"/>
-      <rect x="260" y="81" width="172.7" height="9" rx="4.5" fill="#0969da"/>
-      <text x="950" y="92" fill="#59636e" font-family="Segoe UI, Noto Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="end">27.8%</text>
+      <rect x="260" y="81" width="171.5" height="9" rx="4.5" fill="#0969da"/>
+      <text x="950" y="92" fill="#59636e" font-family="Segoe UI, Noto Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="end">27.7%</text>
 <text x="30" y="111" fill="#1f2328" font-family="Segoe UI, Noto Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start">C++</text>
       <rect x="260" y="100" width="620" height="9" rx="4.5" fill="#eff2f5"/>
-      <rect x="260" y="100" width="91.8" height="9" rx="4.5" fill="#0969da"/>
-      <text x="950" y="111" fill="#59636e" font-family="Segoe UI, Noto Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="end">14.8%</text>
+      <rect x="260" y="100" width="91.2" height="9" rx="4.5" fill="#0969da"/>
+      <text x="950" y="111" fill="#59636e" font-family="Segoe UI, Noto Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="end">14.7%</text>
 <text x="30" y="130" fill="#1f2328" font-family="Segoe UI, Noto Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start">Python</text>
       <rect x="260" y="119" width="620" height="9" rx="4.5" fill="#eff2f5"/>
-      <rect x="260" y="119" width="49.0" height="9" rx="4.5" fill="#0969da"/>
+      <rect x="260" y="119" width="48.7" height="9" rx="4.5" fill="#0969da"/>
       <text x="950" y="130" fill="#59636e" font-family="Segoe UI, Noto Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="end">7.9%</text>
 <text x="30" y="149" fill="#1f2328" font-family="Segoe UI, Noto Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start">C</text>
       <rect x="260" y="138" width="620" height="9" rx="4.5" fill="#eff2f5"/>
-      <rect x="260" y="138" width="22.8" height="9" rx="4.5" fill="#0969da"/>
+      <rect x="260" y="138" width="22.7" height="9" rx="4.5" fill="#0969da"/>
       <text x="950" y="149" fill="#59636e" font-family="Segoe UI, Noto Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="end">3.7%</text>
 <text x="30" y="168" fill="#1f2328" font-family="Segoe UI, Noto Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start">Java</text>
       <rect x="260" y="157" width="620" height="9" rx="4.5" fill="#eff2f5"/>
-      <rect x="260" y="157" width="15.3" height="9" rx="4.5" fill="#0969da"/>
+      <rect x="260" y="157" width="15.2" height="9" rx="4.5" fill="#0969da"/>
       <text x="950" y="168" fill="#59636e" font-family="Segoe UI, Noto Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="end">2.5%</text>
 <text x="30" y="187" fill="#1f2328" font-family="Segoe UI, Noto Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start">HTML</text>
       <rect x="260" y="176" width="620" height="9" rx="4.5" fill="#eff2f5"/>
-      <rect x="260" y="176" width="6.2" height="9" rx="4.5" fill="#0969da"/>
+      <rect x="260" y="176" width="6.4" height="9" rx="4.5" fill="#0969da"/>
       <text x="950" y="187" fill="#59636e" font-family="Segoe UI, Noto Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="end">1.0%</text>
-<text x="30" y="206" fill="#1f2328" font-family="Segoe UI, Noto Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start">ShaderLab</text>
+<text x="30" y="206" fill="#1f2328" font-family="Segoe UI, Noto Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start">JavaScript</text>
       <rect x="260" y="195" width="620" height="9" rx="4.5" fill="#eff2f5"/>
-      <rect x="260" y="195" width="4.0" height="9" rx="4.5" fill="#0969da"/>
-      <text x="950" y="206" fill="#59636e" font-family="Segoe UI, Noto Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="end">0.6%</text>
+      <rect x="260" y="195" width="4.5" height="9" rx="4.5" fill="#0969da"/>
+      <text x="950" y="206" fill="#59636e" font-family="Segoe UI, Noto Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="end">0.7%</text>
   </svg>
