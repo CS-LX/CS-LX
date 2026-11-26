@@ -34,6 +34,6 @@
       <text x="950" y="187" fill="#8b949e" font-family="Segoe UI, Noto Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="end">1.0%</text>
 <text x="30" y="206" fill="#c9d1d9" font-family="Segoe UI, Noto Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start">JavaScript</text>
       <rect x="260" y="195" width="620" height="9" rx="4.5" fill="#161b22"/>
-      <rect x="260" y="195" width="4.4" height="9" rx="4.5" fill="#1f6feb"/>
+      <rect x="260" y="195" width="4.5" height="9" rx="4.5" fill="#1f6feb"/>
       <text x="950" y="206" fill="#8b949e" font-family="Segoe UI, Noto Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="end">0.7%</text>
   </svg>
